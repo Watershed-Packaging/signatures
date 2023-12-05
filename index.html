@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>WS Employees Signatures</title>
+	<link rel="icon" type="image/x-icon" href="favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+@keyframes zoom{
+	from {top:-40px; /*scale:0.5;*/ opacity:0;}
+	to {top:0px; /*scale:1;*/ opacity:1;}
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+	background-color: black;
+	height: 100%;
+}
+
+.col-1 {width: 10%;}
+//.col-2 {width: 22.5%;}
+.col-3 {width: 30%;}
+.col-4 {width: 40%;}
+.col-5 {width: 50%;}
+.col-6 {width: 60%;}
+.col-7 {width: 70%;}
+.col-8 {width: 80%;}
+.col-9 {width: 90%;}
+.col-10 {width: 100%;}
+
+
+.top {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+.title {
+	padding: 10px;
+	margin: auto;
+	font-size: 18pt;
+	font-family: Helvetica-light;
+	color: white;
+	background-color: #87754E;
+	text-align: center;
+	letter-spacing: 5px;
+	//text-shadow: 1px 2px 3px rgba(0,0,0,0.5);
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+	position: relative;
+}
+
+iframe {
+	border: none;
+	width: 100%;
+	height: 100%;
+	padding: 5px 10px 5px 5px;
+	display: block;
+    	background-color: white;
+	overflow: hidden;
+	transition: transform 0.5s;
+}
+
+.filterDiv {
+	display: none;
+	width: 382px;
+	height: 215px;
+	margin: 20px;
+}
+
+iframe:hover {
+	transform: scale(1.01);
+}
+
+.show {
+  display: inline-block;
+}
+
+.container {
+	overflow: auto;
+	margin: auto;
+	text-align: center;
+	padding: 1.2%;
+
+	position: relative;
+	animation-name: zoom;
+	animation-duration: 3s;
+	height: 90%;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Style the buttons */
+.btn {
+	border: none;
+	outline: none;
+	font-size: 11pt;
+	padding: 12px 16px;
+	background-color: #f1f1f1;
+	cursor: pointer;
+	text-align: left;
+}
+.dropdown-content .btn {
+  width: 100%;
+  display: block;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+.dropbtn {
+	background-color: #87754E;
+	color: white;
+	font-size: 11pt;
+	padding: 16px 16px;
+	border: none;
+	cursor: pointer;
+	text-align: center;
+}
+
+.dropdown {
+	//position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	//z-index: 1;
+	height: 500%;
+	overflow: scroll;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #706246;
+}
+
+@media only screen and (min-width: 768px) {
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+.filterDiv {
+	width: 382px;
+	//width: 100%;
+	margin: auto;
+	scale: 80%;
+}
+
+.dropdown-content {
+	height: 200%;
+}
+
+.show2 {
+	display: block;
+}
+
+.title {
+	font-size: 10pt;	
+}
+
+.dropbtn, .btn, .dropdown-content {
+	font-size: 8pt;
+	text-align: left;
+	width: 50%;	
+}
+
+}
+
+@media only screen and (max-width: 400px) {
+.filterDiv {
+	//width: 382px;
+	width: 100%;
+	margin: auto;
+	scale: 80%;
+}
+
+.dropdown-content {
+	height: 300%;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="top">
+
+<div class="title">Watershed Packaging - Employees Signatures</div>
+
+<div id="myBtnContainer" class="dropdown col-1">
+  <button onclick="myFunction()" class="dropbtn col-10">Please choose an employee</button>
+  	<div id="myDropdown" class="dropdown-content col-1">
+ 		<button class="btn active" onclick="filterSelection('all')"> Show all</button>
+		<button class="btn" onclick="filterSelection('a1')">Andrew Plowman</button>
+		<button class="btn" onclick="filterSelection('a2')">Anna Wood</button>
+		<button class="btn" onclick="filterSelection('a3')">Anoushka Blakeman</button>
+		<button class="btn" onclick="filterSelection('c1')">Charice Lee</button>
+		<button class="btn" onclick="filterSelection('c2')">Chris Ransome</button>
+		<button class="btn" onclick="filterSelection('c3')">Claire Harrison</button>
+		<button class="btn" onclick="filterSelection('d1')">Daniel Waters</button>
+		<button class="btn" onclick="filterSelection('d2')">Dave Ward</button>
+		<button class="btn" onclick="filterSelection('d3')">David Burton</button>
+		<button class="btn" onclick="filterSelection('d4')">Dean Wright</button>
+		<button class="btn" onclick="filterSelection('e1')">Evi McNally</button>
+		<button class="btn" onclick="filterSelection('h1')">Hannah Rosendale</button>
+  		<button class="btn" onclick="filterSelection('j1')">John Waters</button>
+		<button class="btn" onclick="filterSelection('j2')">Jayde Herbert</button>
+  		<button class="btn" onclick="filterSelection('k1')">Karina Waters</button>
+  		<button class="btn" onclick="filterSelection('k2')">Katy Blyth</button>
+  		<button class="btn" onclick="filterSelection('l1')">Laurence Brostoff</button>
+  		<button class="btn" onclick="filterSelection('m1')">Maria Din</button>
+  		<button class="btn" onclick="filterSelection('m2')">Mark Falkinder</button>
+  		<button class="btn" onclick="filterSelection('m3')">Martin Johnson</button>
+  		<button class="btn" onclick="filterSelection('m4')">Michael Warden</button>
+  		<button class="btn" onclick="filterSelection('n1')">Natasha Young</button>
+  		<button class="btn" onclick="filterSelection('n2')">Nigel Michael</button>
+  		<button class="btn" onclick="filterSelection('o1')">Olu Akinyele</button>
+  		<button class="btn" onclick="filterSelection('p1')">Paul High</button>
+		<button class="btn" onclick="filterSelection('p2')">Plateroom</button>
+  		<button class="btn" onclick="filterSelection('r1')">Rebecca Willis</button>
+  		<button class="btn" onclick="filterSelection('s1')">Sophie Bullen-Brown</button>
+  		<button class="btn" onclick="filterSelection('s2')">Steven Bains</button>
+  		<button class="btn" onclick="filterSelection('s3')">Stores</button>
+  		<button class="btn" onclick="filterSelection('t1')">Tahnee Gibson</button>
+  		<button class="btn" onclick="filterSelection('w1')">Warehouse</button>
+  		<button class="btn" onclick="filterSelection('w2')">Witold Krzysztofek</button>
+ 	 </div>
+
+</div>
+
+</div>
+
+<div class="container col-8">
+	<div class="filterDiv  a1"><iframe src="employees/AndrewPloughman.html" title="Signature"></iframe></div>
+	<div class="filterDiv  a2"><iframe src="employees/AnnaWood.html" title="Signature"></iframe></div>
+	<div class="filterDiv  a3"><iframe src="employees/AnoushkaBlakeman.html" title="Signature"></iframe></div>
+	<div class="filterDiv  c1"><iframe src="employees/ChariceLee.html" title="Signature"></iframe></div>
+	<div class="filterDiv  c2"><iframe src="employees/ChrisRansome.html" title="Signature"></iframe></div>
+	<div class="filterDiv  c3"><iframe src="employees/ClaireHarrison.html" title="Signature"></iframe></div>
+	<div class="filterDiv  d1"><iframe src="employees/DanielWaters.html" title="Signature"></iframe></div>
+	<div class="filterDiv  d2"><iframe src="employees/DaveWard.html" title="Signature"></iframe></div>
+	<div class="filterDiv  d3"><iframe src="employees/DavidBurton.html" title="Signature"></iframe></div>
+	<div class="filterDiv  d4"><iframe src="employees/DeanWright.html" title="Signature"></iframe></div>
+	<div class="filterDiv  e1"><iframe src="employees/EviMcNally.html" title="Signature"></iframe></div>
+	<div class="filterDiv  h1"><iframe src="employees/HannahRosendale.html" title="Signature"></iframe></div>
+	<div class="filterDiv  j1"><iframe src="employees/JohnWaters.html" title="Signature"></iframe></div>
+	<div class="filterDiv  j2"><iframe src="employees/JaydeHerbert.html" title="Signature"></iframe></div>
+	<div class="filterDiv  k1"><iframe src="employees/KarinaWaters.html" title="Signature"></iframe></div>
+	<div class="filterDiv  k2"><iframe src="employees/KatyBlyth.html" title="Signature"></iframe></div>
+	<div class="filterDiv  l1"><iframe src="employees/LaurenceBrostoff.html" title="Signature"></iframe></div>
+	<div class="filterDiv  m1"><iframe src="employees/MariaDin.html" title="Signature"></iframe></div>
+	<div class="filterDiv  m2"><iframe src="employees/MarkFalkinder.html" title="Signature"></iframe></div>
+	<div class="filterDiv  m3"><iframe src="employees/MartinJohnson.html" title="Signature"></iframe></div>
+	<div class="filterDiv  m4"><iframe src="employees/MichaelWarden.html" title="Signature"></iframe></div>
+	<div class="filterDiv  n1"><iframe src="employees/NatashaYoung.html" title="Signature"></iframe></div>
+	<div class="filterDiv  n2"><iframe src="employees/NigelMichael.html" title="Signature"></iframe></div>
+	<div class="filterDiv  o1"><iframe src="employees/OluAkinyele.html" title="Signature"></iframe></div>
+	<div class="filterDiv  p1"><iframe src="employees/PaulHigh.html" title="Signature"></iframe></div>
+	<div class="filterDiv  p2"><iframe src="employees/Plateroom.html" title="Signature"></iframe></div>
+	<div class="filterDiv  r1"><iframe src="employees/RebeccaWillis.html" title="Signature"></iframe></div>
+	<div class="filterDiv  s1"><iframe src="employees/SophieBullen-Brown.html" title="Signature"></iframe></div>
+	<div class="filterDiv  s2"><iframe src="employees/StevenBains.html" title="Signature"></iframe></div>
+	<div class="filterDiv  s3"><iframe src="employees/Stores.html" title="Signature"></iframe></div>
+	<div class="filterDiv  t1"><iframe src="employees/TahneeGibson.html" title="Signature"></iframe></div>
+	<div class="filterDiv  w1"><iframe src="employees/Warehouse.html" title="Signature"></iframe></div>
+	<div class="filterDiv  w2"><iframe src="employees/WitoldKrzysztofek.html" title="Signature"></iframe></div>
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+function myFunction() {
+   var element = document.getElementById("myDropdown");
+   element.classList.toggle("show2");
+}
+
+</script>
+
+</body>
+</html>
