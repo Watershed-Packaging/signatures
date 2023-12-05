@@ -1,0 +1,67 @@
+#output div {display: inline;}
+p	{
+	font-family: Calibri;
+	font-size: 11pt;
+}
+a:visited {
+	text-decoration: none;
+	color: black;
+}
+table, td {
+	border-collapse: collapse;
+}
+.textleft {
+	text-align:left;
+}
+.blacktxt {
+	color: black;
+	font-family: Helvetica, Arial, Tahoma;
+	font-style: oblique;
+}
+.botrow {
+	border-top: 1px solid #bebebe;
+	border-bottom: 1px solid #bebebe;
+}
+.size12 {
+	font-size: 12px;
+}
+.gold {
+	color: #968359;
+}
+.name {
+	color: #968359;
+	font-size: 14px;
+}
+.position {
+	font-size: 11px;
+	line-height: 1.2;
+}
+.light {
+	font-weight: lighter;
+	font-size: 10px;
+}
+.icons img:hover {
+	//-ms-transform: scale(1.5); /* IE 9 */
+	//-webkit-transform: scale(1.5); /* Safari 3-8 */
+	//transform: scale(1.5);
+}
+.span	{
+	line-height: 85%;
+}
+.ho img	{
+	display: block;
+}
+.click-me {
+	font-size: 10pt;
+	float: right;
+	background-color: white;
+	border: 1px solid lightgray;
+	border-radius: 5px;
+	color: gray;
+	//margin-right: 10px;
+}
+
+.click-me:hover {
+	background-color: #968359;
+	color: white;
+}
