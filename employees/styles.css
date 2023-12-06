@@ -1,7 +1,15 @@
-#output div {display: inline;}
+.disc {
+	color: #000000;
+	font-family: arial;
+	font-style: italic;
+	font-size: 7pt;
+	text-align: left;
+	margin-top: 5px;
+}
 p	{
 	font-family: Calibri;
 	font-size: 11pt;
+	margin: 0px;
 }
 a:visited {
 	text-decoration: none;
