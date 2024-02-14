@@ -18,13 +18,13 @@
     <td width="250"></td>
   </tr>
   <tr height="33">
-    <td width="250" class="blacktxt"><div class="span"><b id="name" class="name"></b><br><span class="position">Marketing & Branding</span></div></td>
+    <td width="250" class="blacktxt"><div class="span"><b id="name" class="name"></b><br><span id="position" class="position"></span></div></td>
   </tr>
   <tr height="15">
-    <td class="blacktxt light"><img width="9.4" src="assets/3.png" alt="Phone">&nbsp;&nbsp;&nbsp;<a href="tel:01132729599">+44 113 272 9599</a></td>
+    <td class="blacktxt light"><img width="9.4" src="assets/3.png" alt="Phone">&nbsp;&nbsp;&nbsp;<a id="tel" href="tel:01132729599"></a></td>
   </tr>
   <tr height="15">
-    <td class="blacktxt light"><img width="9.4" src="assets/4.png" alt="Mail">&nbsp;&nbsp;&nbsp;<a href="mailto:karina@watershed-packaging.co.uk">karina@watershed-packaging.co.uk</a></td>
+    <td class="blacktxt light"><img width="9.4" src="assets/4.png" alt="Mail">&nbsp;&nbsp;&nbsp;<a id="mail" href="mailto:karina@watershed-packaging.co.uk"></a></td>
   </tr>
   <tr height="20">
     <td class="icons">
@@ -62,11 +62,15 @@ xhttp.send();
 
 function myFunction(xml) {
     var xmlDoc = xml.responseXML;
-    var x = xmlDoc.getElementsByTagName("name")[0].childNodes[0];
-    document.getElementById("name").innerHTML = x.nodeValue;
+    var x1 = xmlDoc.getElementsByTagName("name")[0].childNodes[0];
+    var x2 = xmlDoc.getElementsByTagName("position")[0].childNodes[0];
+    var x3 = xmlDoc.getElementsByTagName("tel")[0].childNodes[0];
+    var x4 = xmlDoc.getElementsByTagName("mail")[0].childNodes[0];
+    document.getElementById("name").innerHTML = x1.nodeValue;
+    document.getElementById("position").innerHTML = x2.nodeValue;
+    document.getElementById("tel").innerHTML = x3.nodeValue;
+    document.getElementById("mail").innerHTML = x4.nodeValue;
 }
-
-
 
 </script>
 </body>
