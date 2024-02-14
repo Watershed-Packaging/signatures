@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<button class="click-me">Click here to Copy</button>
+<div id="output">
+<p>Kind regards,</p><br>
+<table border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="50"></td><td width="36"></td><td width="2"></td><td width="12"></td><td width="310"></td>
+  </tr>
+  <tr height="12">
+    <td width="86" rowspan="6" colspan="2" class="ho"><img src="assets/avatars/KarinaWaters.png" width="74" height="74" alt="Photo"></td>
+    <td width="2" rowspan="6" class="ho"><img width="2" height="70" src="assets/2.png" alt="Vertical line"></td>
+    <td width="12" rowspan="6"></td>
+    <td width="250"></td>
+  </tr>
+  <tr height="33">
+    <td width="250" class="blacktxt"><div class="span"><b id="name" class="name"></b><br><span class="position">Marketing & Branding</span></div></td>
+  </tr>
+  <tr height="15">
+    <td class="blacktxt light"><img width="9.4" src="assets/3.png" alt="Phone">&nbsp;&nbsp;&nbsp;<a href="tel:01132729599">+44 113 272 9599</a></td>
+  </tr>
+  <tr height="15">
+    <td class="blacktxt light"><img width="9.4" src="assets/4.png" alt="Mail">&nbsp;&nbsp;&nbsp;<a href="mailto:karina@watershed-packaging.co.uk">karina@watershed-packaging.co.uk</a></td>
+  </tr>
+  <tr height="20">
+    <td class="icons">
+      <a href="https://www.youtube.com/channel/UCVQdT8gnmgT65TUo1ZSvl1g" target="_blank" title="Watershed YouTube"><img height="8" src="assets/5.png" alt="YouTube"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://www.facebook.com/watershedpackaging" target="_blank" title="Watershed Facebook"><img height="8" src="assets/6.png" alt="Facebook"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://www.instagram.com/watershedpackagingltd/" target="_blank" title="Watershed Instagram"><img height="8" src="assets/7.png" alt="Instagram"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://www.linkedin.com/company/watershed-packaging-ltd" target="_blank" title="Watershed LinkedIn"><img height="8" src="assets/8.png" alt="LinkedIn"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://www.twitter.com/watershedpkgltd" target="_blank" title="Watershed Twitter"><img height="8" src="assets/9.png" alt="Twitter"></a>
+    </td>
+  </tr>
+  <tr height="5">
+    <td width="250"></td>
+  </tr>
+  <tr height="20">
+    <td rowspan="2" colspan="1" class="botrow"><img src="assets/logo.png" width="43" height="43" alt="WS logo"></td>
+    <td colspan="4" class="botrow blacktxt"><a href="tel:01132770606">+44 (0) 113 277 0606</a></td>
+  </tr>
+  <tr height="20">
+    <td colspan="4" class="botrow blacktxt"><a href="https://www.watershed-packaging.co.uk" target="_blank" title="Watershed Packaging Website"><b class="gold">www.watershed-packaging.co.uk</b></a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="https://www.watershedmachinery.co.uk" target="_blank" title="Watershed Machinery Website"><b class="gold">www.watershedmachinery.co.uk</b></a></td>
+  </tr>
+</table>
+    <span class="disc">Watershed Packaging Ltd, Thornes Farm Way, Osmondthorpe, Leeds, LS9 0AN.<br>Registered in England and Wales. Company No. 2877836.<br>&nbsp;</span>
+</div>
+
+<script>
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        myFunction(this);
+    }
+};
+xhttp.open("GET", "Employees.xml", true);
+xhttp.send();
+
+function myFunction(xml) {
+    var xmlDoc = xml.responseXML;
+    var x = xmlDoc.getElementsByTagName("title")[0].childNodes[0];
+    document.getElementById("name").innerHTML = x.nodeValue;
+}
+
+
+
+</script>
+</body>
+</html>
