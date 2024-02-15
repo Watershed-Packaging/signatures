@@ -299,6 +299,7 @@ html, body {
 
 <script>
 
+// Choose data from XML document.
 function myFunction2(c) {
 
   var x = document.getElementById("name");
@@ -320,7 +321,7 @@ function myFunction2(c) {
     var x3 = xmlDoc.getElementsByTagName("tel");
     var x4 = xmlDoc.getElementsByTagName("mail");
     for (i = 0; i < y.length; i++) {
-      var z = y[i+1];
+      var z = y[i+1]; // Because I already have one "button" element.
       if (z.id === c) { 
     document.getElementById("name").innerHTML = x1[i].childNodes[0].nodeValue;
     document.getElementById("position").innerHTML = x2[i].childNodes[0].nodeValue;
@@ -331,11 +332,6 @@ function myFunction2(c) {
  }
 }
   
-
-/* -------------------- */
-
-
-
 // Add active class to the current button (highlight it)
 var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByClassName("btn");
@@ -353,6 +349,7 @@ function myFunction() {
 }
 
 </script>
+<script src="cpcont.js"></script>
 
 </body>
 </html>
