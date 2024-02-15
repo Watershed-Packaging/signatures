@@ -311,13 +311,13 @@ var xhttp = new XMLHttpRequest();
   function myFunction2(xml) {
     var xmlDoc = xml.responseXML;
     var x1 = xmlDoc.getElementsByTagName("name")[0].childNodes[0];
-    var x2 = xmlDoc.getElementsByTagName("position");
+    var x2 = xmlDoc.getElementsByTagName("position")[0].childNodes[0];
     var x3 = xmlDoc.getElementsByTagName("tel")[0].childNodes[0];
     var x4 = xmlDoc.getElementsByTagName("mail")[0].childNodes[0];
     document.getElementById("name").innerHTML = x1.nodeValue;
-    /*document.getElementById("position").innerHTML = x2.nodeValue;
+    document.getElementById("position").innerHTML = x2.nodeValue;
     document.getElementById("tel").innerHTML = x3.nodeValue;
-    document.getElementById("mail").innerHTML = x4.nodeValue;*/
+    document.getElementById("mail").innerHTML = x4.nodeValue;
   }
 	
 /* -------------------- */
