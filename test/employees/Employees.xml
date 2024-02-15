@@ -13,4 +13,10 @@
     <tel>+44 113 272 9599</tel>
     <mail>witold@watershed-packaging.co.uk</mail>
   </employee>
+  <employee>
+    <name>Chris Ransome</name>
+    <position>Studio Manager</position>
+    <tel>+44 113 272 9599</tel>
+    <mail>chris@watershed-packaging.co.uk</mail>
+  </employee>
 </employees>
