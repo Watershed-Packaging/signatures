@@ -56,7 +56,7 @@ html, body {
 }
 
 .filterDiv {
-	display: none;
+	display: inline-block;
 	width: 450px;
 	height: 250px;
 	margin: 17px;
@@ -209,40 +209,39 @@ html, body {
 <div id="myBtnContainer" class="dropdown col-1">
   <button onclick="myFunction()" class="dropbtn col-10">Please choose an employee</button>
   	<div id="myDropdown" class="dropdown-content col-1">
- 		<button class="btn active" onclick="filterSelection('all')"> Show all</button>
-		<button class="btn" onclick="filterSelection('a1')">Andrew Plowman</button>
-		<button class="btn" onclick="filterSelection('a2')">Anna Wood</button>
-		<button class="btn" onclick="filterSelection('a3')">Anoushka Blakeman</button>
-		<button class="btn" onclick="filterSelection('c2')">Chris Ransome</button>
-		<button class="btn" onclick="filterSelection('c3')">Claire Harrison</button>
-		<button class="btn" onclick="filterSelection('d1')">Daniel Waters</button>
-		<button class="btn" onclick="filterSelection('d2')">Dave Ward</button>
-		<button class="btn" onclick="filterSelection('d3')">David Burton</button>
-		<button class="btn" onclick="filterSelection('d4')">Dean Wright</button>
-		<button class="btn" onclick="filterSelection('e1')">Evi McNally</button>
-		<button class="btn" onclick="filterSelection('h1')">Hannah Rosendale</button>
-  		<button class="btn" onclick="filterSelection('j1')">John Waters</button>
-		<button class="btn" onclick="filterSelection('j2')">Jayde Herbert</button>
+		<button id="a1" class="btn active" onclick="myFunction2('a1')">Andrew Plowman</button>
+		<button id="a2" class="btn" onclick="myFunction2('a2')">Anna Wood</button>
+		<button id="a3" class="btn" onclick="myFunction2('a3')">Anoushka Blakeman</button>
+		<button id="c2" class="btn" onclick="myFunction2('c2')">Chris Ransome</button>
+		<button id="c3" class="btn" onclick="myFunction2('c3')">Claire Harrison</button>
+		<button id="d1" class="btn" onclick="myFunction2('d1')">Daniel Waters</button>
+		<button id="d2" class="btn" onclick="myFunction2('d2')">Dave Ward</button>
+		<button id="d3" class="btn" onclick="myFunction2('d3')">David Burton</button>
+		<button id="d4" class="btn" onclick="myFunction2('d4')">Dean Wright</button>
+		<button id="e1" class="btn" onclick="myFunction2('e1')">Evi McNally</button>
+		<button id="h1" class="btn" onclick="myFunction2('h1')">Hannah Rosendale</button>
+  		<button id="j1" class="btn" onclick="myFunction2('j1')">John Waters</button>
+		<button id="j2" class="btn" onclick="myFunction2('j2')">Jayde Herbert</button>
   		<button id="k1" class="btn" onclick="myFunction2('k1')">Karina Waters</button>
-  		<button class="btn" onclick="filterSelection('k2')">Katy Blyth</button>
-  		<button class="btn" onclick="filterSelection('l1')">Laurence Brostoff</button>
-  		<button class="btn" onclick="filterSelection('m1')">Maria Din</button>
-  		<button class="btn" onclick="filterSelection('m2')">Mark Falkinder</button>
-  		<button class="btn" onclick="filterSelection('m3')">Martin Johnson</button>
-  		<button class="btn" onclick="filterSelection('m4')">Michael Warden</button>
-  		<button class="btn" onclick="filterSelection('n1')">Natasha Young</button>
-  		<button class="btn" onclick="filterSelection('n2')">Nigel Michael</button>
-  		<button class="btn" onclick="filterSelection('o1')">Olu Akinyele</button>
-  		<button class="btn" onclick="filterSelection('p1')">Paul High</button>
-		<button class="btn" onclick="filterSelection('p2')">Plateroom</button>
-  		<button class="btn" onclick="filterSelection('r1')">Rachel Whiteside</button>
-		<button class="btn" onclick="filterSelection('r2')">Rebecca Willis</button>
-  		<button class="btn" onclick="filterSelection('s1')">Sophie Bullen-Brown</button>
-  		<button class="btn" onclick="filterSelection('s2')">Steven Bains</button>
-  		<button class="btn" onclick="filterSelection('s3')">Stores</button>
-  		<button class="btn" onclick="filterSelection('t1')">Tahnee Gibson</button>
-  		<button class="btn" onclick="filterSelection('w1')">Warehouse</button>
-  		<button class="btn" onclick="filterSelection('w2')">Witold Krzysztofek</button>
+  		<button id="k2" class="btn" onclick="myFunction2('k2')">Katy Blyth</button>
+  		<button id="l1" class="btn" onclick="myFunction2('l1')">Laurence Brostoff</button>
+  		<button id="m1" class="btn" onclick="myFunction2('m1')">Maria Din</button>
+  		<button id="m2" class="btn" onclick="myFunction2('m2')">Mark Falkinder</button>
+  		<button id="m3" class="btn" onclick="myFunction2('m3')">Martin Johnson</button>
+  		<button id="m4" class="btn" onclick="myFunction2('m4')">Michael Warden</button>
+  		<button id="n1" class="btn" onclick="myFunction2('n1')">Natasha Young</button>
+  		<button id="n2" class="btn" onclick="myFunction2('n2')">Nigel Michael</button>
+  		<button id="o1" class="btn" onclick="myFunction2('o1')">Olu Akinyele</button>
+  		<button id="p1" class="btn" onclick="myFunction2('p1')">Paul High</button>
+		<button id="p2" class="btn" onclick="myFunction2('p2')">Plateroom</button>
+  		<button id="r1" class="btn" onclick="myFunction2('r1')">Rachel Whiteside</button>
+		<button id="r2" class="btn" onclick="myFunction2('r2')">Rebecca Willis</button>
+  		<button id="s1" class="btn" onclick="myFunction2('s1')">Sophie Bullen-Brown</button>
+  		<button id="s2" class="btn" onclick="myFunction2('s2')">Steven Bains</button>
+  		<button id="s3" class="btn" onclick="myFunction2('s3')">Stores</button>
+  		<button id="t1" class="btn" onclick="myFunction2('t1')">Tahnee Gibson</button>
+  		<button id="w1" class="btn" onclick="myFunction2('w1')">Warehouse</button>
+  		<button id="w2" class="btn" onclick="myFunction2('w2')">Witold Krzysztofek</button>
  	 </div>
 
 </div>
@@ -250,7 +249,7 @@ html, body {
 </div>
 
 <div class="container col-8">
-	<div class="filterDiv  k1">
+	<div class="filterDiv">
           <button class="click-me">Click here to Copy</button>
 <div id="output">
 <p>Kind regards,</p><br>
@@ -309,7 +308,7 @@ xhttp.onreadystatechange = function() {
 xhttp.open("GET", "Employees/Employees.xml", true);
 xhttp.send();
 
-function myFunction(xml) {
+function myFunction22(xml) {
     var xmlDoc = xml.responseXML;
     var x1 = xmlDoc.getElementsByTagName("name")[0].childNodes[0];
     var x2 = xmlDoc.getElementsByTagName("position")[0].childNodes[0];
@@ -339,37 +338,7 @@ function myFunction2(c) {
 
 /* -------------------- */
 
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
 
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
-
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
-    }
-  }
-  element.className = arr1.join(" ");
-}
 
 // Add active class to the current button (highlight it)
 var btnContainer = document.getElementById("myBtnContainer");
