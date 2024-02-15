@@ -209,7 +209,7 @@ html, body {
 <div id="myBtnContainer" class="dropdown col-1">
   <button onclick="myFunction()" class="dropbtn col-10">Please choose an employee</button>
   	<div id="myDropdown" class="dropdown-content col-1">
-		<button id="a1" class="btn active" onclick="myFunction2(xml)">Andrew Plowman</button>
+		<button id="a1" class="btn active" onclick="myFunction2('a1')">Andrew Plowman</button>
 		<button id="a2" class="btn" onclick="myFunction2('a2')">Anna Wood</button>
 		<button id="a3" class="btn" onclick="myFunction2('a3')">Anoushka Blakeman</button>
 		<button id="c2" class="btn" onclick="myFunction2('c2')">Chris Ransome</button>
@@ -299,16 +299,20 @@ html, body {
 
 <script>
 	
-var xhttp = new XMLHttpRequest();
+/* -------------------- */
+
+function myFunction2(c) {
+
+  var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-        myFunction2(this);
+        myFunction3(this);
     }
   };
   xhttp.open("GET", "employees/Employees.xml", true);
   xhttp.send();
 	
-  function myFunction2(xml) {
+  function myFunction3(xml) {
     var xmlDoc = xml.responseXML;
     var x1 = xmlDoc.getElementsByTagName("name")[0].childNodes[0];
     var x2 = xmlDoc.getElementsByTagName("position")[0].childNodes[0];
@@ -318,13 +322,9 @@ var xhttp = new XMLHttpRequest();
     document.getElementById("position").innerHTML = x2.nodeValue;
     document.getElementById("tel").innerHTML = x3.nodeValue;
     document.getElementById("mail").innerHTML = x4.nodeValue;
-  }
+  }	
 	
-/* -------------------- */
-
-function myFunction22(c) {
-	
-  var x = document.getElementById("name2");
+  /*var x = document.getElementById("name2");
   var y = document.getElementsByTagName("button");
   for (i = 0; i < y.length; i++) {
       var z = y[i];
@@ -332,7 +332,7 @@ function myFunction22(c) {
     var data = x2[i].childNodes[0].nodeValue;
     x.innerHTML = data;
   }
- }
+ }*/
 }
   
 
