@@ -302,7 +302,7 @@ html, body {
 var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-        myFunction(this);
+        myFunction2(this);
     }
   };
   xhttp.open("GET", "employees/Employees.xml", true);
@@ -319,7 +319,6 @@ var xhttp = new XMLHttpRequest();
     document.getElementById("tel").innerHTML = x3.nodeValue;
     document.getElementById("mail").innerHTML = x4.nodeValue;
   }
-	document.getElementById("name").innerHTML = x1.nodeValue;
 	
 /* -------------------- */
 
