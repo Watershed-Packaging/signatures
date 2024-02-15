@@ -308,33 +308,31 @@ xhttp.onreadystatechange = function() {
 xhttp.open("GET", "Employees/Employees.xml", true);
 xhttp.send();
 
-function myFunction22(xml) {
-    var xmlDoc = xml.responseXML;
-    var x1 = xmlDoc.getElementsByTagName("name")[0].childNodes[0];
-    var x2 = xmlDoc.getElementsByTagName("position")[0].childNodes[0];
-    var x3 = xmlDoc.getElementsByTagName("tel")[0].childNodes[0];
-    var x4 = xmlDoc.getElementsByTagName("mail")[0].childNodes[0];
-    document.getElementById("name").innerHTML = x1.nodeValue;
-    document.getElementById("position").innerHTML = x2.nodeValue;
-    document.getElementById("tel").innerHTML = x3.nodeValue;
-    document.getElementById("mail").innerHTML = x4.nodeValue;
-}
-
 /* -------------------- */
 
 function myFunction2(c) {
-  var xmlDoc = xml.responseXML;
-  var p = xmlDoc.getElementsByTagName("position");
+
+  function myFunction22(xml) {
+    var xmlDoc = xml.responseXML;
+    var x1 = xmlDoc.getElementsByTagName("name")[0].childNodes[0];
+    var x2 = xmlDoc.getElementsByTagName("position");
+    var x3 = xmlDoc.getElementsByTagName("tel")[0].childNodes[0];
+    var x4 = xmlDoc.getElementsByTagName("mail")[0].childNodes[0];
+    /*document.getElementById("name").innerHTML = x1.nodeValue;
+    document.getElementById("position").innerHTML = x2.nodeValue;
+    document.getElementById("tel").innerHTML = x3.nodeValue;
+    document.getElementById("mail").innerHTML = x4.nodeValue;*/
+	
   var x = document.getElementById("name");
   var y = document.getElementsByTagName("button");
   for (i = 0; i < y.length; i++) {
       var z = y[i];
   if (z.id === c) { 
-    var data = p[i].childNodes[0].nodeValue;
+    var data = x2[i].childNodes[0].nodeValue;
     x.innerHTML = data;
   }
  }
-}
+}}
   
 
 /* -------------------- */
