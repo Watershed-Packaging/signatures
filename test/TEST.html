@@ -314,25 +314,24 @@ function myFunction2(c) {
 	
   function myFunction3(xml) {
     var xmlDoc = xml.responseXML;
-    var x1 = xmlDoc.getElementsByTagName("name")[0].childNodes[0];
+    var x1 = xmlDoc.getElementsByTagName("name");
     var x2 = xmlDoc.getElementsByTagName("position")[0].childNodes[0];
     var x3 = xmlDoc.getElementsByTagName("tel")[0].childNodes[0];
     var x4 = xmlDoc.getElementsByTagName("mail")[0].childNodes[0];
-    document.getElementById("name").innerHTML = x1.nodeValue;
     document.getElementById("position").innerHTML = x2.nodeValue;
     document.getElementById("tel").innerHTML = x3.nodeValue;
     document.getElementById("mail").innerHTML = x4.nodeValue;
   }	
 	
-  /*var x = document.getElementById("name2");
+  var x = document.getElementById("name");
   var y = document.getElementsByTagName("button");
   for (i = 0; i < y.length; i++) {
       var z = y[i];
   if (z.id === c) { 
-    var data = x2[i].childNodes[0].nodeValue;
-    x.innerHTML = data;
+    var data = x1[i].childNodes[0].nodeValue;
+    x.innerHTML = data + "ok";
   }
- }*/
+ }
 }
   
 
