@@ -303,6 +303,12 @@ html, body {
 
 function myFunction2(c) {
 
+  var x = document.getElementById("name");
+  var y = document.getElementsByTagName("button");
+  for (i = 0; i < y.length; i++) {
+      var z = y[i];
+  if (z.id === c) { 	
+
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -321,15 +327,10 @@ function myFunction2(c) {
     document.getElementById("position").innerHTML = x2.nodeValue;
     document.getElementById("tel").innerHTML = x3.nodeValue;
     document.getElementById("mail").innerHTML = x4.nodeValue;
-  }	
-	
-  var x = document.getElementById("name");
-  var y = document.getElementsByTagName("button");
-  for (i = 0; i < y.length; i++) {
-      var z = y[i];
-  if (z.id === c) { 
+
     var data = x1[i].childNodes[0].nodeValue;
     x.innerHTML = data + "ok";
+  }	
   }
  }
 }
