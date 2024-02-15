@@ -298,8 +298,6 @@ html, body {
 </div>
 
 <script>
-	
-/* -------------------- */
 
 function myFunction2(c) {
 
@@ -321,7 +319,7 @@ function myFunction2(c) {
     var x2 = xmlDoc.getElementsByTagName("position");
     var x3 = xmlDoc.getElementsByTagName("tel");
     var x4 = xmlDoc.getElementsByTagName("mail");
-    for (i = 0; i < y.length; i++) {
+    for (i = 1; i < y.length; i++) {
       var z = y[i];
       if (z.id === c) { 
     document.getElementById("name").innerHTML = x1[i].childNodes[0].nodeValue;
