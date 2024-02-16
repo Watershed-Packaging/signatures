@@ -1,6 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <employees>
+
+  <employee>
+    <name>Andrew Plowman</name>
+    <position>Production Manager</position>
+    <tel>+44 14 9524 1050</tel>
+    <mail>andrewplowman@watershed-packaging.co.uk</mail>
+  </employee>
+
+  <employee>
+    <name>Anna Wood</name>
+    <position>Group Director</position>
+    <tel>+44 78 1627 1021</tel>
+    <mail>annawood@watershed-packaging.co.uk</mail>
+  </employee>
+
+  <employee>
+    <name>Anoushka Blakeman</name>
+    <position>Internal Account Manager</position>
+    <tel>+44 113 322 7089</tel>
+    <mail>anoushka@watershed-packaging.co.uk</mail>
+  </employee>
+
+  <employee>
+    <name>Chris Ransome</name>
+    <position>Studio Manager</position>
+    <tel>+44 113 272 9592</tel>
+    <mail>chris@watershed-packaging.co.uk</mail>
+  </employee>
+
+  <employee>
+    <name>Claire Harrison</name>
+    <position>Purchasing Manager</position>
+    <tel>+44 78 7540 6820</tel>
+    <mail>claireharrison@watershed-packaging.co.uk</mail>
+  </employee>
+
+  <employee>
+    <name>Dan Waters</name>
+    <position>Watershed Packaging Ltd</position>
+    <tel>+44 75 5702 4129 / +44 113 277 0606</tel>
+    <mail>dan@watershed-packaging.co.uk</mail>
+  </employee>
+
+  <employee>
+    <name>Dave Ward</name>
+    <position>Warehouse Manager</position>
+    <tel>+44 77 0345 9754</tel>
+    <mail>daveward@watershed-packaging.co.uk</mail>
+  </employee>
+
+  <employee>
+    <name>David Burton</name>
+    <position>Internal Account Executive</position>
+    <tel>+44 113 518 2022</tel>
+    <mail>david@watershed-packaging.co.uk</mail>
+  </employee>
+
+  <employee>
+    <name>Dean Wright</name>
+    <position>Packaging Manager</position>
+    <tel>+44 79 6054 0084</tel>
+    <mail>deanwright@watershed-packaging.co.uk</mail>
+  </employee>
+
+  <employee>
+    <name>Evi McNally</name>
+    <position>Internal Account Executive</position>
+    <tel>+44 113 272 9586</tel>
+    <mail>evi@watershed-packaging.co.uk</mail>
+  </employee>
+
+  <employee>
+    <name>Hannah Rosendale</name>
+    <position>Production Planner</position>
+    <tel>+44 113 272 9581</tel>
+    <mail>hannah@watershed-packaging.co.uk</mail>
+  </employee>
+
+  <employee>
+    <name>John Waters</name>
+    <position>Managing Director</position>
+    <tel>+44 78 8073 3504</tel>
+    <mail>johnwaters@watershed-packaging.co.uk</mail>
+  </employee>
+
+  <employee>
+    <name>Jayde Herbert</name>
+    <position>Internal Account Manager</position>
+    <tel>+44 14 9524 1050</tel>
+    <mail>jayde@watershed-packaging.co.uk</mail>
+  </employee>
+
+  <employee>
+    <name>Karina Waters</name>
+    <position>Marketing &amp; Branding</position>
+    <tel>+44 113 272 9599</tel>
+    <mail>karina@watershed-packaging.co.uk</mail>
+  </employee>
+
+  <employee>
+    <name>Karina Waters</name>
+    <position>Marketing and Branding</position>
+    <tel>+44 113 272 9599</tel>
+    <mail>karina@watershed-packaging.co.uk</mail>
+  </employee>
+  <employee>
+    <name>Karina Waters</name>
+    <position>Marketing and Branding</position>
+    <tel>+44 113 272 9599</tel>
+    <mail>karina@watershed-packaging.co.uk</mail>
+  </employee>
+  <employee>
+    <name>Karina Waters</name>
+    <position>Marketing and Branding</position>
+    <tel>+44 113 272 9599</tel>
+    <mail>karina@watershed-packaging.co.uk</mail>
+  </employee>
+  <employee>
+    <name>Karina Waters</name>
+    <position>Marketing and Branding</position>
+    <tel>+44 113 272 9599</tel>
+    <mail>karina@watershed-packaging.co.uk</mail>
+  </employee>
+  <employee>
+    <name>Karina Waters</name>
+    <position>Marketing and Branding</position>
+    <tel>+44 113 272 9599</tel>
+    <mail>karina@watershed-packaging.co.uk</mail>
+  </employee>
+  <employee>
+    <name>Karina Waters</name>
+    <position>Marketing and Branding</position>
+    <tel>+44 113 272 9599</tel>
+    <mail>karina@watershed-packaging.co.uk</mail>
+  </employee>
   <employee>
     <name>Karina Waters</name>
     <position>Marketing and Branding</position>
