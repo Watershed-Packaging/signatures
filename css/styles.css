@@ -1,0 +1,186 @@
+@keyframes zoom{
+	from {top:-40px; /*scale:0.5;*/ opacity:0;}
+	to {top:0px; /*scale:1;*/ opacity:1;}
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+	background-color: black;
+	height: 100%;
+}
+
+.col-1 {width: 10%;}
+//.col-2 {width: 22.5%;}
+.col-3 {width: 30%;}
+.col-4 {width: 40%;}
+.col-5 {width: 50%;}
+.col-6 {width: 60%;}
+.col-7 {width: 70%;}
+.col-8 {width: 80%;}
+.col-9 {width: 90%;}
+.col-10 {width: 100%;}
+
+
+.top {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+.title {
+	padding: 10px;
+	margin: auto;
+	font-size: 18pt;
+	font-family: Helvetica-light;
+	color: white;
+	background-color: #87754E;
+	text-align: center;
+	letter-spacing: 5px;
+	//text-shadow: 1px 2px 3px rgba(0,0,0,0.5);
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+	position: relative;
+}
+
+.filterDiv {
+	display: inline-block;
+	width: 450px;
+	height: 250px;
+	margin: 17px;
+        text-align: left;
+	background-color: white;
+	padding: 20px;
+}
+
+.show {
+  display: inline-block;
+}
+
+.container {
+	overflow: auto;
+	margin: auto;
+	text-align: center;
+	padding: 1.2%;
+
+	position: relative;
+	animation-name: zoom;
+	animation-duration: 3s;
+	height: 90%;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Style the buttons */
+.btn {
+	border: none;
+	outline: none;
+	font-size: 11pt;
+	padding: 12px 16px;
+	background-color: #f1f1f1;
+	cursor: pointer;
+	text-align: left;
+}
+.dropdown-content .btn {
+  width: 100%;
+  display: block;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+.dropbtn {
+	background-color: #87754E;
+	color: white;
+	font-size: 11pt;
+	padding: 16px 16px;
+	border: none;
+	cursor: pointer;
+	text-align: center;
+}
+
+.dropdown {
+	//position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	//z-index: 1;
+	height: 500%;
+	overflow: scroll;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #706246;
+}
+
+@media only screen and (min-width: 768px) {
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+.filterDiv {
+	width: 382px;
+	//width: 100%;
+	margin: auto;
+	scale: 80%;
+}
+
+.dropdown-content {
+	height: 200%;
+}
+
+.show2 {
+	display: block;
+}
+
+.title {
+	font-size: 10pt;	
+}
+
+.dropbtn, .btn, .dropdown-content {
+	font-size: 8pt;
+	text-align: left;
+	width: 50%;	
+}
+
+}
+
+@media only screen and (max-width: 400px) {
+.filterDiv {
+	//width: 382px;
+	width: 100%;
+	margin: auto;
+	scale: 80%;
+}
+
+.dropdown-content {
+	height: 300%;
+}
