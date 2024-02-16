@@ -101,51 +101,136 @@
   </employee>
 
   <employee>
-    <name>Karina Waters</name>
-    <position>Marketing and Branding</position>
-    <tel>+44 113 272 9599</tel>
-    <mail>karina@watershed-packaging.co.uk</mail>
+    <name>Katy Blyth</name>
+    <position>Operations Manager</position>
+    <tel>+44 113 272 9596 / +44 74 0206 7367</tel>
+    <mail>katy@watershed-packaging.co.uk</mail>
   </employee>
+
   <employee>
-    <name>Karina Waters</name>
-    <position>Marketing and Branding</position>
-    <tel>+44 113 272 9599</tel>
-    <mail>karina@watershed-packaging.co.uk</mail>
+    <name>Laurence Brostoff</name>
+    <position>Sales Account Manager</position>
+    <tel>+44 113 272 9588 / +44 77 1245 2230</tel>
+    <mail>laurence@watershed-packaging.co.uk</mail>
   </employee>
+
   <employee>
-    <name>Karina Waters</name>
-    <position>Marketing and Branding</position>
-    <tel>+44 113 272 9599</tel>
-    <mail>karina@watershed-packaging.co.uk</mail>
+    <name>Maria Din</name>
+    <position>Management Accountant</position>
+    <tel>+44 113 272 9582</tel>
+    <mail>mariadin@watershed-packaging.co.uk</mail>
   </employee>
+
   <employee>
-    <name>Karina Waters</name>
-    <position>Marketing and Branding</position>
-    <tel>+44 113 272 9599</tel>
-    <mail>karina@watershed-packaging.co.uk</mail>
+    <name>Mark Falkinder</name>
+    <position>Head Engineer</position>
+    <tel>+44 77 9219 0003</tel>
+    <mail>mark@watershed-packaging.co.uk</mail>
   </employee>
+
   <employee>
-    <name>Karina Waters</name>
-    <position>Marketing and Branding</position>
-    <tel>+44 113 272 9599</tel>
-    <mail>karina@watershed-packaging.co.uk</mail>
+    <name>Martin Johnson</name>
+    <position>Technical Manager</position>
+    <tel>+44 73 9613 1112</tel>
+    <mail>martinjohnson@watershed-packaging.co.uk</mail>
   </employee>
+
   <employee>
-    <name>Karina Waters</name>
-    <position>Marketing and Branding</position>
-    <tel>+44 113 272 9599</tel>
-    <mail>karina@watershed-packaging.co.uk</mail>
+    <name>Michael Warden</name>
+    <position>Print Production Manager</position>
+    <tel>+44 77 4650 9879</tel>
+    <mail>michaelwarden@watershed-packaging.co.uk</mail>
   </employee>
+
   <employee>
-    <name>Karina Waters</name>
-    <position>Marketing and Branding</position>
-    <tel>+44 113 272 9599</tel>
-    <mail>karina@watershed-packaging.co.uk</mail>
+    <name>Natasha Young</name>
+    <position>Customer Service Manager</position>
+    <tel>+44 113 272 9580</tel>
+    <mail>natashayoung@watershed-packaging.co.uk</mail>
   </employee>
+
+  <employee>
+    <name>Nigel Michael</name>
+    <position>Site Manager</position>
+    <tel>+44 14 9524 1050</tel>
+    <mail>nigelmichael@watershed-packaging.co.uk</mail>
+  </employee>
+
+  <employee>
+    <name>Olu Akinyele</name>
+    <position>Engineer</position>
+    <tel>+44 75 4630 6989</tel>
+    <mail>olu@watershed-packaging.co.uk</mail>
+  </employee>
+
+  <employee>
+    <name>Paul High</name>
+    <position>General Manager</position>
+    <tel>+44 79 1766 4759 / +44 113 272 9589</tel>
+    <mail>paulhigh@watershed-packaging.co.uk</mail>
+  </employee>
+
+  <employee>
+    <name>Plateroom</name>
+    <position>Watershed Packaging Ltd</position>
+    <tel>+44 113 272 9593</tel>
+    <mail>plateroom@watershed-packaging.co.uk</mail>
+  </employee>
+
+  <employee>
+    <name>Rachel Whiteside</name>
+    <position>Watershed Packaging Ltd</position>
+    <tel>+44 73 5490 4249 / +44 113 277 0606</tel>
+    <mail>rachel@watershed-packaging.co.uk</mail>
+  </employee>
+
+  <employee>
+    <name>Rebecca Willis</name>
+    <position>Internal Account Executive</position>
+    <tel>+44 113 272 9585</tel>
+    <mail>rebeccawillis@watershed-packaging.co.uk</mail>
+  </employee>
+
+  <employee>
+    <name>Sophie Bullen-Brown</name>
+    <position>Quality Manager</position>
+    <tel>+44 113 272 9594</tel>
+    <mail>sophie@watershed-packaging.co.uk</mail>
+  </employee>
+
+  <employee>
+    <name>Steven Bains</name>
+    <position>Accounts</position>
+    <tel>+44 113 272 9584</tel>
+    <mail>steven@watershed-packaging.co.uk</mail>
+  </employee>
+
+  <employee>
+    <name>Stores</name>
+    <position>Watershed Packaging Ltd</position>
+    <tel>+44 113 518 2023</tel>
+    <mail>stores@watershed-packaging.co.uk</mail>
+  </employee>
+
+  <employee>
+    <name>Tahnee Gibson</name>
+    <position>Internal Account Manager</position>
+    <tel>+44 14 9524 1050</tel>
+    <mail>tahnee@watershed-packaging.co.uk</mail>
+  </employee>
+
+  <employee>
+    <name>Warehouse</name>
+    <position>Watershed Packaging Ltd</position>
+    <tel>+44 113 518 2023</tel>
+    <mail>warehouse@watershed-packaging.co.uk</mail>
+  </employee>
+
   <employee>
     <name>Witold Krzysztofek</name>
     <position>Studio Artworker</position>
-    <tel>+44 113 272 9599</tel>
+    <tel>+44 113 272 9592</tel>
     <mail>witold@watershed-packaging.co.uk</mail>
   </employee>
+
 </employees>
