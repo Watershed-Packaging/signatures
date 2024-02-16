@@ -4,7 +4,7 @@
         myFunction3(this);
     }
   };
-  xhttp.open("GET", "../xml/employees.xml", true);
+  xhttp.open("GET", "xml/employees.xml", true);
   xhttp.send();
 	
     var xmlDoc = xml.responseXML;
