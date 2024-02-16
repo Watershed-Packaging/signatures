@@ -28,7 +28,7 @@ function myFunction2(c) {
         myFunction3(this);
     }
   };
-  xhttp.open("GET", "../xml/employees.xml", true);
+  xhttp.open("GET", "xml/employees.xml", true);
   xhttp.send();
 	
   function myFunction3(xml) {
