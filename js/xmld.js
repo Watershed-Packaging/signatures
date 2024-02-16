@@ -4,9 +4,11 @@
         myFunction3(this);
     }
   };
+
   xhttp.open("GET", "xml/employees.xml", true);
   xhttp.send();
-	
+
+  function myFunction3(xml) {	
     var xmlDoc = xml.responseXML;
     var x1 = xmlDoc.getElementsByTagName("name");
     var x2 = xmlDoc.getElementsByTagName("position");
@@ -16,6 +18,8 @@
     document.getElementById("position").innerHTML = x2[0].childNodes[0].nodeValue;
     document.getElementById("tel").innerHTML = x3[0].childNodes[0].nodeValue;
     document.getElementById("mail").innerHTML = x4[0].childNodes[0].nodeValue;
+  }
+
 
 // Choose data from XML document.
 function myFunction2(c) {
