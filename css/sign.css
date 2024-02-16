@@ -36,15 +36,6 @@ table, td {
 	border-bottom: 1px solid #bebebe;
 	font-size: 8pt;
 }
-@media only screen and (max-width: 768px) {
-.botrow {font-size: 1.15vw;}
-}
-@media only screen and (max-width: 550px) {
-.botrow {font-size: 1.6vw;}
-}
-@media only screen and (max-width: 400px) {
-.botrow {font-size: 2vw;}
-}
 .size12 {
 	font-size: 12px;
 }
