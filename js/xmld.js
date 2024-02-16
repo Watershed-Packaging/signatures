@@ -1,14 +1,14 @@
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-        myFunction3(this);
+        myFunction3b(this);
     }
   };
 
   xhttp.open("GET", "xml/employees.xml", true);
   xhttp.send();
 
-  function myFunction3(xml) {	
+  function myFunction3b(xml) {	
     var xmlDoc = xml.responseXML;
     var x1 = xmlDoc.getElementsByTagName("name");
     var x2 = xmlDoc.getElementsByTagName("position");
@@ -19,6 +19,7 @@
     document.getElementById("tel").innerHTML = x3[0].childNodes[0].nodeValue;
     document.getElementById("mail").innerHTML = x4[0].childNodes[0].nodeValue;
   }
+myFunction3b(xml);
 
 
 // Choose data from XML document.
