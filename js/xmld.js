@@ -14,10 +14,12 @@
     var x2 = xmlDoc.getElementsByTagName("position");
     var x3 = xmlDoc.getElementsByTagName("tel");
     var x4 = xmlDoc.getElementsByTagName("mail");
+    var w = xmlDoc.getElementsByTagName("wales");
     document.getElementById("name").innerHTML = x1[0].childNodes[0].nodeValue;
     document.getElementById("position").innerHTML = x2[0].childNodes[0].nodeValue;
     document.getElementById("tel").innerHTML = x3[0].childNodes[0].nodeValue;
     document.getElementById("mail").innerHTML = x4[0].childNodes[0].nodeValue;
+    document.getElementById("phone").innerHTML = w[0].childNodes[0].nodeValue;
   }
 myFunction3b(xml);
 
@@ -42,6 +44,7 @@ function myFunction2(c) {
     var x2 = xmlDoc.getElementsByTagName("position");
     var x3 = xmlDoc.getElementsByTagName("tel");
     var x4 = xmlDoc.getElementsByTagName("mail");
+    var w = xmlDoc.getElementsByTagName("wales");
     for (i = 0; i < y.length; i++) {
       var z = y[i+1]; // Because I already have one "button" element.
       if (z.id === c) { 
@@ -49,6 +52,9 @@ function myFunction2(c) {
     document.getElementById("position").innerHTML = x2[i].childNodes[0].nodeValue;
     document.getElementById("tel").innerHTML = x3[i].childNodes[0].nodeValue;
     document.getElementById("mail").innerHTML = x4[i].childNodes[0].nodeValue;
+   }
+      if (z.className === "w") { 
+    document.getElementById("phone").innerHTML = w[0].childNodes[0].nodeValue;
    }	
   }
  }
