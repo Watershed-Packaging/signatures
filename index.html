@@ -4,216 +4,9 @@
 <head>
 	<title>WS Employees Signatures</title>
 	<link rel="icon" type="image/x-icon" href="favicon.png">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/sign.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<style>
-
-@keyframes zoom{
-	from {top:-40px; /*scale:0.5;*/ opacity:0;}
-	to {top:0px; /*scale:1;*/ opacity:1;}
-}
-
-* {
-  box-sizing: border-box;
-}
-
-html, body {
-	background-color: black;
-	height: 100%;
-}
-
-.col-1 {width: 10%;}
-//.col-2 {width: 22.5%;}
-.col-3 {width: 30%;}
-.col-4 {width: 40%;}
-.col-5 {width: 50%;}
-.col-6 {width: 60%;}
-.col-7 {width: 70%;}
-.col-8 {width: 80%;}
-.col-9 {width: 90%;}
-.col-10 {width: 100%;}
-
-
-.top {
-	position: sticky;
-	top: 0;
-	z-index: 1;
-}
-
-.title {
-	padding: 10px;
-	margin: auto;
-	font-size: 18pt;
-	font-family: Helvetica-light;
-	color: white;
-	background-color: #87754E;
-	text-align: center;
-	letter-spacing: 5px;
-	//text-shadow: 1px 2px 3px rgba(0,0,0,0.5);
-	box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-	position: relative;
-}
-
-iframe {
-	border: none;
-	width: 100%;
-	height: 100%;
-	padding: 5px 10px 5px 5px;
-	display: block;
-    	background-color: white;
-	overflow: hidden;
-	transition: transform 0.5s;
-}
-
-.filterDiv {
-	display: none;
-	width: 450px;
-	height: 250px;
-	margin: 17px;
-}
-
-<!--	width: 390px;
-	height: 220px; -->
-
-iframe:hover {
-	transform: scale(1.01);
-}
-
-.show {
-  display: inline-block;
-}
-
-.container {
-	overflow: auto;
-	margin: auto;
-	text-align: center;
-	padding: 1.2%;
-
-	position: relative;
-	animation-name: zoom;
-	animation-duration: 3s;
-	height: 90%;
-}
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-.container::-webkit-scrollbar {
-    display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.container {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-
-/* Style the buttons */
-.btn {
-	border: none;
-	outline: none;
-	font-size: 11pt;
-	padding: 12px 16px;
-	background-color: #f1f1f1;
-	cursor: pointer;
-	text-align: left;
-}
-.dropdown-content .btn {
-  width: 100%;
-  display: block;
-}
-
-.btn:hover {
-  background-color: #ddd;
-}
-
-.btn.active {
-  background-color: #666;
-  color: white;
-}
-
-.dropbtn {
-	background-color: #87754E;
-	color: white;
-	font-size: 11pt;
-	padding: 16px 16px;
-	border: none;
-	cursor: pointer;
-	text-align: center;
-}
-
-.dropdown {
-	//position: relative;
-	display: inline-block;
-}
-
-.dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: #f9f9f9;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	//z-index: 1;
-	height: 500%;
-	overflow: scroll;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #706246;
-}
-
-@media only screen and (min-width: 768px) {
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-}
-
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
-.filterDiv {
-	width: 382px;
-	//width: 100%;
-	margin: auto;
-	scale: 80%;
-}
-
-.dropdown-content {
-	height: 200%;
-}
-
-.show2 {
-	display: block;
-}
-
-.title {
-	font-size: 10pt;	
-}
-
-.dropbtn, .btn, .dropdown-content {
-	font-size: 8pt;
-	text-align: left;
-	width: 50%;	
-}
-
-}
-
-@media only screen and (max-width: 400px) {
-.filterDiv {
-	//width: 382px;
-	width: 100%;
-	margin: auto;
-	scale: 80%;
-}
-
-.dropdown-content {
-	height: 300%;
-}
-
-}
-
-</style>
-
 </head>
 
 <body>
@@ -225,40 +18,39 @@ iframe:hover {
 <div id="myBtnContainer" class="dropdown col-1">
   <button onclick="myFunction()" class="dropbtn col-10">Please choose an employee</button>
   	<div id="myDropdown" class="dropdown-content col-1">
- 		<button class="btn active" onclick="filterSelection('all')"> Show all</button>
-		<button class="btn" onclick="filterSelection('a1')">Andrew Plowman</button>
-		<button class="btn" onclick="filterSelection('a2')">Anna Wood</button>
-		<button class="btn" onclick="filterSelection('a3')">Anoushka Blakeman</button>
-		<button class="btn" onclick="filterSelection('c2')">Chris Ransome</button>
-		<button class="btn" onclick="filterSelection('c3')">Claire Harrison</button>
-		<button class="btn" onclick="filterSelection('d1')">Daniel Waters</button>
-		<button class="btn" onclick="filterSelection('d2')">Dave Ward</button>
-		<button class="btn" onclick="filterSelection('d3')">David Burton</button>
-		<button class="btn" onclick="filterSelection('d4')">Dean Wright</button>
-		<button class="btn" onclick="filterSelection('e1')">Evi McNally</button>
-		<button class="btn" onclick="filterSelection('h1')">Hannah Rosendale</button>
-  		<button class="btn" onclick="filterSelection('j1')">John Waters</button>
-		<button class="btn" onclick="filterSelection('j2')">Jayde Herbert</button>
-  		<button class="btn" onclick="filterSelection('k1')">Karina Waters</button>
-  		<button class="btn" onclick="filterSelection('k2')">Katy Blyth</button>
-  		<button class="btn" onclick="filterSelection('l1')">Laurence Brostoff</button>
-  		<button class="btn" onclick="filterSelection('m1')">Maria Din</button>
-  		<button class="btn" onclick="filterSelection('m2')">Mark Falkinder</button>
-  		<button class="btn" onclick="filterSelection('m3')">Martin Johnson</button>
-  		<button class="btn" onclick="filterSelection('m4')">Michael Warden</button>
-  		<button class="btn" onclick="filterSelection('n1')">Natasha Young</button>
-  		<button class="btn" onclick="filterSelection('n2')">Nigel Michael</button>
-  		<button class="btn" onclick="filterSelection('o1')">Olu Akinyele</button>
-  		<button class="btn" onclick="filterSelection('p1')">Paul High</button>
-		<button class="btn" onclick="filterSelection('p2')">Plateroom</button>
-  		<button class="btn" onclick="filterSelection('r1')">Rachel Whiteside</button>
-		<button class="btn" onclick="filterSelection('r2')">Rebecca Willis</button>
-  		<button class="btn" onclick="filterSelection('s1')">Sophie Bullen-Brown</button>
-  		<button class="btn" onclick="filterSelection('s2')">Steven Bains</button>
-  		<button class="btn" onclick="filterSelection('s3')">Stores</button>
-  		<button class="btn" onclick="filterSelection('t1')">Tahnee Gibson</button>
-  		<button class="btn" onclick="filterSelection('w1')">Warehouse</button>
-  		<button class="btn" onclick="filterSelection('w2')">Witold Krzysztofek</button>
+		<button id="a1" class="btn active w" onclick="myFunction2('a1'); swap('a1')">Andrew Plowman</button>
+		<button id="a2" class="btn" onclick="myFunction2('a2'); swap('a2')">Anna Wood</button>
+		<button id="a3" class="btn" onclick="myFunction2('a3'); swap('a3')">Anoushka Blakeman</button>
+		<button id="c2" class="btn" onclick="myFunction2('c2'); swap('c2')">Chris Ransome</button>
+		<button id="c3" class="btn" onclick="myFunction2('c3'); swap('c3')">Claire Harrison</button>
+		<button id="d1" class="btn" onclick="myFunction2('d1'); swap('d1')">Daniel Waters</button>
+		<button id="d2" class="btn" onclick="myFunction2('d2'); swap('d2')">Dave Ward</button>
+		<button id="d3" class="btn" onclick="myFunction2('d3'); swap('d3')">David Burton</button>
+		<button id="d4" class="btn" onclick="myFunction2('d4'); swap('d4')">Dean Wright</button>
+		<button id="e1" class="btn" onclick="myFunction2('e1'); swap('e1')">Evi McNally</button>
+		<button id="h1" class="btn" onclick="myFunction2('h1'); swap('h1')">Hannah Rosendale</button>
+  		<button id="j1" class="btn" onclick="myFunction2('j1'); swap('j1')">John Waters</button>
+		<button id="j2" class="btn w" onclick="myFunction2('j2'); swap('j2')">Jayde Herbert</button>
+  		<button id="k1" class="btn" onclick="myFunction2('k1'); swap('k1')">Karina Waters</button>
+  		<button id="k2" class="btn" onclick="myFunction2('k2'); swap('k2')">Katy Blyth</button>
+  		<button id="l1" class="btn" onclick="myFunction2('l1'); swap('l1')">Laurence Brostoff</button>
+  		<button id="m1" class="btn" onclick="myFunction2('m1'); swap('m1')">Maria Din</button>
+  		<button id="m2" class="btn" onclick="myFunction2('m2'); swap('m2')">Mark Falkinder</button>
+  		<button id="m3" class="btn" onclick="myFunction2('m3'); swap('m3')">Martin Johnson</button>
+  		<button id="m4" class="btn" onclick="myFunction2('m4'); swap('m4')">Michael Warden</button>
+  		<button id="n1" class="btn" onclick="myFunction2('n1'); swap('n1')">Natasha Young</button>
+  		<button id="n2" class="btn w" onclick="myFunction2('n2'); swap('n2')">Nigel Michael</button>
+  		<button id="o1" class="btn" onclick="myFunction2('o1'); swap('o1')">Olu Akinyele</button>
+  		<button id="p1" class="btn" onclick="myFunction2('p1'); swap('p1')">Paul High</button>
+		<button id="p2" class="btn" onclick="myFunction2('p2'); swap('p2')">Plateroom</button>
+  		<button id="r1" class="btn" onclick="myFunction2('r1'); swap('r1')">Rachel Whiteside</button>
+		<button id="r2" class="btn" onclick="myFunction2('r2'); swap('r2')">Rebecca Willis</button>
+  		<button id="s1" class="btn" onclick="myFunction2('s1'); swap('s1')">Sophie Bullen-Brown</button>
+  		<button id="s2" class="btn" onclick="myFunction2('s2'); swap('s2')">Steven Bains</button>
+  		<button id="s3" class="btn" onclick="myFunction2('s3'); swap('s3')">Stores</button>
+  		<button id="t1" class="btn w" onclick="myFunction2('t1'); swap('t1')">Tahnee Gibson</button>
+  		<button id="w1" class="btn" onclick="myFunction2('w1'); swap('w1')">Warehouse</button>
+  		<button id="w2" class="btn" onclick="myFunction2('w2'); swap('w2')">Witold Krzysztofek</button>
  	 </div>
 
 </div>
@@ -266,91 +58,58 @@ iframe:hover {
 </div>
 
 <div class="container col-8">
-	<div class="filterDiv  a1"><iframe src="employees/AndrewPloughman.html" title="Signature"></iframe></div>
-	<div class="filterDiv  a2"><iframe src="employees/AnnaWood.html" title="Signature"></iframe></div>
-	<div class="filterDiv  a3"><iframe src="employees/AnoushkaBlakeman.html" title="Signature"></iframe></div>
-	<div class="filterDiv  c2"><iframe src="employees/ChrisRansome.html" title="Signature"></iframe></div>
-	<div class="filterDiv  c3"><iframe src="employees/ClaireHarrison.html" title="Signature"></iframe></div>
-	<div class="filterDiv  d1"><iframe src="employees/DanielWaters.html" title="Signature"></iframe></div>
-	<div class="filterDiv  d2"><iframe src="employees/DaveWard.html" title="Signature"></iframe></div>
-	<div class="filterDiv  d3"><iframe src="employees/DavidBurton.html" title="Signature"></iframe></div>
-	<div class="filterDiv  d4"><iframe src="employees/DeanWright.html" title="Signature"></iframe></div>
-	<div class="filterDiv  e1"><iframe src="employees/EviMcNally.html" title="Signature"></iframe></div>
-	<div class="filterDiv  h1"><iframe src="employees/HannahRosendale.html" title="Signature"></iframe></div>
-	<div class="filterDiv  j1"><iframe src="employees/JohnWaters.html" title="Signature"></iframe></div>
-	<div class="filterDiv  j2"><iframe src="employees/JaydeHerbert.html" title="Signature"></iframe></div>
-	<div class="filterDiv  k1"><iframe src="employees/KarinaWaters.html" title="Signature"></iframe></div>
-	<div class="filterDiv  k2"><iframe src="employees/KatyBlyth.html" title="Signature"></iframe></div>
-	<div class="filterDiv  l1"><iframe src="employees/LaurenceBrostoff.html" title="Signature"></iframe></div>
-	<div class="filterDiv  m1"><iframe src="employees/MariaDin.html" title="Signature"></iframe></div>
-	<div class="filterDiv  m2"><iframe src="employees/MarkFalkinder.html" title="Signature"></iframe></div>
-	<div class="filterDiv  m3"><iframe src="employees/MartinJohnson.html" title="Signature"></iframe></div>
-	<div class="filterDiv  m4"><iframe src="employees/MichaelWarden.html" title="Signature"></iframe></div>
-	<div class="filterDiv  n1"><iframe src="employees/NatashaYoung.html" title="Signature"></iframe></div>
-	<div class="filterDiv  n2"><iframe src="employees/NigelMichael.html" title="Signature"></iframe></div>
-	<div class="filterDiv  o1"><iframe src="employees/OluAkinyele.html" title="Signature"></iframe></div>
-	<div class="filterDiv  p1"><iframe src="employees/PaulHigh.html" title="Signature"></iframe></div>
-	<div class="filterDiv  p2"><iframe src="employees/Plateroom.html" title="Signature"></iframe></div>
-	<div class="filterDiv  r1"><iframe src="employees/RachelWhiteside.html" title="Signature"></iframe></div>
-	<div class="filterDiv  r2"><iframe src="employees/RebeccaWillis.html" title="Signature"></iframe></div>
-	<div class="filterDiv  s1"><iframe src="employees/SophieBullen-Brown.html" title="Signature"></iframe></div>
-	<div class="filterDiv  s2"><iframe src="employees/StevenBains.html" title="Signature"></iframe></div>
-	<div class="filterDiv  s3"><iframe src="employees/Stores.html" title="Signature"></iframe></div>
-	<div class="filterDiv  t1"><iframe src="employees/TahneeGibson.html" title="Signature"></iframe></div>
-	<div class="filterDiv  w1"><iframe src="employees/Warehouse.html" title="Signature"></iframe></div>
-	<div class="filterDiv  w2"><iframe src="employees/WitoldKrzysztofek.html" title="Signature"></iframe></div>
+	<div class="filterDiv">
+          <button class="click-me">Click here to Copy</button>
+<div id="output">
+<p>Kind regards,</p><br>
+<table border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="50"></td><td width="36"></td><td width="2"></td><td width="12"></td><td width="310"></td>
+  </tr>
+  <tr height="12">
+    <td width="86" rowspan="6" colspan="2" class="ho"><img id="pic" src="employees/assets/avatars/placeholder.png" width="74" height="74" alt="Photo"></td>
+    <td width="2" rowspan="6" class="ho"><img width="2" height="70" src="employees/assets/2.png" alt="Vertical line"></td>
+    <td width="12" rowspan="6"></td>
+    <td width="250"></td>
+  </tr>
+  <tr height="33">
+    <td width="250" class="blacktxt"><div class="span"><b id="name" class="name"></b><br><span id="position" class="position"></span></div></td>
+  </tr>
+  <tr height="15">
+    <td class="blacktxt light"><img width="9.4" src="employees/assets/3.png" alt="Phone">&nbsp;&nbsp;&nbsp;<span id="tel"></span></td>
+  </tr>
+  <tr height="15">
+    <td class="blacktxt light"><img width="9.4" src="employees/assets/4.png" alt="Mail">&nbsp;&nbsp;&nbsp;<a href="" id="mail"></a></td>
+  </tr>
+  <tr height="20">
+    <td class="icons">
+      <a href="https://www.youtube.com/channel/UCVQdT8gnmgT65TUo1ZSvl1g" target="_blank" title="Watershed YouTube"><img height="8" src="employees/assets/5.png" alt="YouTube"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://www.facebook.com/watershedpackaging" target="_blank" title="Watershed Facebook"><img height="8" src="employees/assets/6.png" alt="Facebook"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://www.instagram.com/watershedpackagingltd/" target="_blank" title="Watershed Instagram"><img height="8" src="employees/assets/7.png" alt="Instagram"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://www.linkedin.com/company/watershed-packaging-ltd" target="_blank" title="Watershed LinkedIn"><img height="8" src="employees/assets/8.png" alt="LinkedIn"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://www.twitter.com/watershedpkgltd" target="_blank" title="Watershed Twitter"><img height="8" src="employees/assets/9.png" alt="Twitter"></a>
+    </td>
+  </tr>
+  <tr height="5">
+    <td width="250"></td>
+  </tr>
+  <tr height="20">
+    <td rowspan="2" colspan="1" class="botrow"><img src="employees/assets/logo.png" width="43" height="43" alt="WS logo"></td>
+    <td colspan="4" class="botrow blacktxt"><span id="phone">+44 (0) 113 277 0606</span></td>
+  </tr>
+  <tr height="20">
+    <td colspan="4" class="botrow blacktxt"><a href="https://www.watershed-packaging.co.uk" target="_blank" title="Watershed Packaging Website"><b class="gold">www.watershed-packaging.co.uk</b></a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="https://www.watershedmachinery.co.uk" target="_blank" title="Watershed Machinery Website"><b class="gold">www.watershedmachinery.co.uk</b></a></td>
+  </tr>
+</table>
+    <span class="disc">Watershed Packaging Ltd, Thornes Farm Way, Osmondthorpe, Leeds, LS9 0AN.<br>Registered in England and Wales. Company No. 2877836.<br>&nbsp;</span>
+</div>
+        </div>
 </div>
 
-<script>
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
-
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
-
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
-    }
-  }
-  element.className = arr1.join(" ");
-}
-
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-
-function myFunction() {
-   var element = document.getElementById("myDropdown");
-   element.classList.toggle("show2");
-}
-
-</script>
+<script src="js/togpic.js"></script>
+<script src="js/xmld.js"></script>
+<script src="js/actbut.js"></script>
+<script src="js/cpcont.js"></script>
 
 </body>
 </html>
