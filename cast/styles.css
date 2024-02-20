@@ -23,7 +23,6 @@ html, body {
 .slideshow-container {
   position: relative;
   height: 100%;
-  border: 1px solid red;
 }
 
 .mySlides {
@@ -33,7 +32,6 @@ html, body {
   height: 100%;
   animation-name: slide;
   animation-duration: 10s;
-  border: 1px solid green;
 }
 
 img {
