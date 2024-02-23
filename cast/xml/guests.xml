@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<guests>
+  <monday>
+    <guest>
+      <name>Witold Krzysztofek</name>
+      <company>Watershed Packaging</company>
+      <time>12:00 pm</time>
+    </guest>
+  </monday>
+</guests>
