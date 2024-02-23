@@ -7,5 +7,10 @@
       <company>Watershed Packaging</company>
       <time>12:00 pm</time>
     </guest>
+    <guest>
+      <name>Karina Waters</name>
+      <company>Watershed Packaging</company>
+      <time>2:00 pm</time>
+    </guest>
   </monday>
 </guests>
