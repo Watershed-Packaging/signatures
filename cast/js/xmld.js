@@ -11,7 +11,7 @@
   function myFunction3b(xml) {	
     var xmlDoc = xml.responseXML;
     var d1 = xmlDoc.getElementsByTagName("monday");
-    document.getElementById("line1").getElementsByClassName("m4")[0].innerHTML = d1[0].childNodes[0].childNodes[0].nodeValue;
+    document.getElementById("line1").getElementsByClassName("m4")[0].innerHTML = d1[0].childNodes[0].childNodes[1].nodeValue;
   }
 myFunction3b(xml);
 
