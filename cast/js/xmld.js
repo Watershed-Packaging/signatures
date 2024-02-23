@@ -13,10 +13,10 @@
   function myFunction3b(xml) {	
     var xmlDoc = xml.responseXML;
     var d1 = xmlDoc.getElementsByTagName("monday");
-    for (i = 0; i < x.length; i++) {
     var y = 1;
+    for (i = 0; i < x.length; i++) {
     document.getElementById("line1").getElementsByClassName("m4")[i].innerHTML = d1[0].childNodes[y].childNodes[1].childNodes[0].nodeValue;
-    document.getElementById("line1").getElementsByClassName("m5")[i].innerHTML = d1[0].childNodes[y].childNodes[3].childNodes[0].nodeValue;
+    document.getElementById("line1").getElementsByClassName("m6")[i].innerHTML = d1[0].childNodes[y].childNodes[3].childNodes[0].nodeValue;
     document.getElementById("line1").getElementsByClassName("m2")[i].innerHTML = d1[0].childNodes[y].childNodes[5].childNodes[0].nodeValue;
     y = y+2;
     }
