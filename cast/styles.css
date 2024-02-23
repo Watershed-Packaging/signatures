@@ -160,6 +160,18 @@ html, body {
   font-size: 2.35vw;
 }
 
+.m5 {
+  position: relative;
+  font-weight: bold;
+  font-size: 2.35vw;
+}
+
+.m6 {
+  position: relative;
+  font-weight: bold;
+  font-size: 2.35vw;
+}
+
 .font {
   font-family: Helvetica;
 }
