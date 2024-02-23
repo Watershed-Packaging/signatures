@@ -19,6 +19,8 @@
     var d5 = xmlDoc.getElementsByTagName("friday");
     var y = 1;
 
+    var i = 0;
+
     do {
     
     document.getElementById("line1").getElementsByClassName("m4")[i].innerHTML = d1[0].childNodes[y].childNodes[1].childNodes[0].nodeValue;
