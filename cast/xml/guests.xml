@@ -1,16 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <guests>
+
   <monday>
+
     <guest>
       <name>Witold Krzysztofek</name>
       <company>Watershed Packaging</company>
       <time>12:00 pm</time>
     </guest>
-    <guest>
-      <name>Karina Waters</name>
-      <company>Watershed Packaging</company>
-      <time>2:00 pm</time>
-    </guest>
+
   </monday>
+
+  <tuesday>
+
+    <guest>
+      <name>Witold Krzysztofek</name>
+      <company>Watershed Packaging</company>
+      <time>12:00 pm</time>
+    </guest>
+
+  </tuesday>
+
+  <wednesday>
+
+    <guest>
+      <name>Sabrina Pucci</name>
+      <company>Irplast</company>
+      <time>10:00 am</time>
+    </guest>
+
+    <guest>
+      <name>Zoltan</name>
+      <company>Ricketss</company>
+      <time>10:30 am</time>
+    </guest>
+
+  </wednesday>
+
+  <thursday>
+
+    <guest>
+      <name>Witold Krzysztofek</name>
+      <company>Watershed Packaging</company>
+      <time>12:00 pm</time>
+    </guest>
+
+  </thursday>
+
+  <friday>
+
+    <guest>
+      <name>Witold Krzysztofek</name>
+      <company>Watershed Packaging</company>
+      <time>12:00 pm</time>
+    </guest>
+
+  </friday>
+
 </guests>
