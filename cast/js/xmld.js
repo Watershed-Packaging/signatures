@@ -18,8 +18,9 @@
     var d4 = xmlDoc.getElementsByTagName("thursday");
     var d5 = xmlDoc.getElementsByTagName("friday");
     var y = 1;
-    for (i = 0; i < x.length; i++) {
 
+    do {
+    
     document.getElementById("line1").getElementsByClassName("m4")[i].innerHTML = d1[0].childNodes[y].childNodes[1].childNodes[0].nodeValue;
     document.getElementById("line1").getElementsByClassName("m6")[i].innerHTML = d1[0].childNodes[y].childNodes[3].childNodes[0].nodeValue;
     document.getElementById("line1").getElementsByClassName("m2")[i].innerHTML = d1[0].childNodes[y].childNodes[5].childNodes[0].nodeValue;
@@ -40,9 +41,14 @@
     document.getElementById("line5").getElementsByClassName("m6")[i].innerHTML = d5[0].childNodes[y].childNodes[3].childNodes[0].nodeValue;
     document.getElementById("line5").getElementsByClassName("m2")[i].innerHTML = d5[0].childNodes[y].childNodes[5].childNodes[0].nodeValue;
 
+    i++;
+
     y = y+2;
 
     }
+
+    while (i < x.length);
+
   }
 
 myFunction3b(xml);
