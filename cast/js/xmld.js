@@ -9,8 +9,6 @@
   xhttp.send();
   
   
-
-  function myFunction3b(xml) {	
     var x = document.getElementsByClassName("m4")
     var xmlDoc = xml.responseXML;
     var d1 = xmlDoc.getElementsByTagName("monday");
@@ -20,30 +18,36 @@
     var d5 = xmlDoc.getElementsByTagName("friday");
     var y = 1;
     var i;
+
+    function myFunction3a(xml) {
     for (i = 0; i < x.length; i++) {
     document.getElementById("line1").getElementsByClassName("m4")[i].innerHTML = d1[0].childNodes[y].childNodes[1].childNodes[0].nodeValue;
     document.getElementById("line1").getElementsByClassName("m6")[i].innerHTML = d1[0].childNodes[y].childNodes[3].childNodes[0].nodeValue;
     document.getElementById("line1").getElementsByClassName("m2")[i].innerHTML = d1[0].childNodes[y].childNodes[5].childNodes[0].nodeValue;
     y = y+2;
-  }
+  }}
+    function myFunction3b(xml) {
     for (i = 0; i < x.length; i++) {
     document.getElementById("line2").getElementsByClassName("m4")[i].innerHTML = d2[0].childNodes[y].childNodes[1].childNodes[0].nodeValue;
     document.getElementById("line2").getElementsByClassName("m6")[i].innerHTML = d2[0].childNodes[y].childNodes[3].childNodes[0].nodeValue;
     document.getElementById("line2").getElementsByClassName("m2")[i].innerHTML = d2[0].childNodes[y].childNodes[5].childNodes[0].nodeValue;
     y = y+2;
-  }
+  }}
+    function myFunction3c(xml) {
     for (i = 0; i < x.length; i++) {
     document.getElementById("line3").getElementsByClassName("m4")[i].innerHTML = d3[0].childNodes[y].childNodes[1].childNodes[0].nodeValue;
     document.getElementById("line3").getElementsByClassName("m6")[i].innerHTML = d3[0].childNodes[y].childNodes[3].childNodes[0].nodeValue;
     document.getElementById("line3").getElementsByClassName("m2")[i].innerHTML = d3[0].childNodes[y].childNodes[5].childNodes[0].nodeValue;
     y = y+2;
-  }
+  }}
+    function myFunction3d(xml) {
     for (i = 0; i < x.length; i++) {
     document.getElementById("line4").getElementsByClassName("m4")[i].innerHTML = d4[0].childNodes[y].childNodes[1].childNodes[0].nodeValue;
     document.getElementById("line4").getElementsByClassName("m6")[i].innerHTML = d4[0].childNodes[y].childNodes[3].childNodes[0].nodeValue;
     document.getElementById("line4").getElementsByClassName("m2")[i].innerHTML = d4[0].childNodes[y].childNodes[5].childNodes[0].nodeValue;
     y = y+2;
-  }
+  }}
+    function myFunction3e(xml) {
     for (i = 0; i < x.length; i++) {
     document.getElementById("line5").getElementsByClassName("m4")[i].innerHTML = d5[0].childNodes[y].childNodes[1].childNodes[0].nodeValue;
     document.getElementById("line5").getElementsByClassName("m6")[i].innerHTML = d5[0].childNodes[y].childNodes[3].childNodes[0].nodeValue;
@@ -52,4 +56,8 @@
   }
 }
 
+myFunction3a(xml);
 myFunction3b(xml);
+myFunction3c(xml);
+myFunction3d(xml);
+myFunction3e(xml);
