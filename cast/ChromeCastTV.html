@@ -19,7 +19,7 @@
 
         <div class="day day1">
           <div class="left">
-            <span class="m1 font italic">Monday:</span><span class="m1date font italic">(19.02.2024)</span>
+            <span class="m1 font italic">Monday:</span><span class="m1date font italic">(26.02.2024)</span>
           </div><div id="line1" class="right">
             <div class="right1 l1">
               <span class="m2 font italic"></span>
@@ -42,7 +42,7 @@
 
         <div class="day day2">
           <div class="left">
-            <span class="m1 font italic">Tuesday:</span><span class="m1date font italic">(20.02.2024)</span>
+            <span class="m1 font italic">Tuesday:</span><span class="m1date font italic">(27.02.2024)</span>
           </div><div id="line2" class="right">
             <div class="right1 l1">
               <span class="m2 font italic"></span>
@@ -65,7 +65,7 @@
 
         <div class="day day3">
           <div class="left">
-            <span class="m1 font italic">Wednesday:</span><span class="m1date font italic">(21.02.2024)</span>
+            <span class="m1 font italic">Wednesday:</span><span class="m1date font italic">(28.02.2024)</span>
           </div><div id="line3" class="right">
             <div class="right1 l1">
               <span class="m2 font italic"></span>
@@ -88,7 +88,7 @@
 
         <div class="day day4">
           <div class="left">
-            <span class="m1 font italic">Thursday:</span><span class="m1date font italic">(22.02.2024)</span>
+            <span class="m1 font italic">Thursday:</span><span class="m1date font italic">(29.02.2024)</span>
           </div><div id="line4" class="right">
             <div class="right1 l1">
               <span class="m2 font italic"></span>
@@ -111,7 +111,7 @@
 
         <div class="day day5">
           <div class="left">
-            <span class="m1 font italic">Friday:</span><span class="m1date font italic">(23.02.2024)</span>
+            <span class="m1 font italic">Friday:</span><span class="m1date font italic">(01.03.2024)</span>
           </div><div id="line5" class="right">
             <div class="right1 l1">
               <span class="m2 font italic"></span>
@@ -150,40 +150,8 @@
 </body>
 
 <script src="clock.js"></script>
+<script src="date.js"></script>
 <script src="js/xmld.js"></script>
 <!--<script src="slides.js"></script>-->
-
-
-
-<script>
-
-function myFunction() {
-const div1 = document.createElement("div");
-div1.className = "right1";
-const span1 = document.createElement("span");
-span1.className = "m2 font italic";
-const span2 = document.createElement("span");
-span2.className = "m3 font italic";
-const div2 = document.createElement("div");
-div2.className = "right2";
-const span3 = document.createElement("span");
-span3.className = "m4 font italic";
-
-const textnode1 = document.createTextNode("8.00 am");
-const textnode2 = document.createTextNode("-");
-const textnode3 = document.createTextNode("Customer Name from Company Name");
-
-div1.appendChild(span1);
-span1.appendChild(textnode1);
-span2.appendChild(textnode2);
-div2.appendChild(span3);
-span3.appendChild(textnode3);
-
-document.getElementById("line1").appendChild(div1);
-document.getElementById("line1").appendChild(span2);
-document.getElementById("line1").appendChild(div2);
-}
-
-</script>
 
 </html>
