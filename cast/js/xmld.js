@@ -8,9 +8,10 @@
   xhttp.open("GET", "xml/guests.xml", true);
   xhttp.send();
   
-  var x = document.getElementsByClassName("m4")
+  
 
   function myFunction3b(xml) {	
+    var x = document.getElementsByClassName("m4")
     var xmlDoc = xml.responseXML;
     var d1 = xmlDoc.getElementsByTagName("monday");
     var d2 = xmlDoc.getElementsByTagName("tuesday");
@@ -18,6 +19,7 @@
     var d4 = xmlDoc.getElementsByTagName("thursday");
     var d5 = xmlDoc.getElementsByTagName("friday");
     var y = 1;
+    var i;
     for (i = 0; i < x.length; i++) {
     document.getElementById("line1").getElementsByClassName("m4")[i].innerHTML = d1[0].childNodes[y].childNodes[1].childNodes[0].nodeValue;
     document.getElementById("line1").getElementsByClassName("m6")[i].innerHTML = d1[0].childNodes[y].childNodes[3].childNodes[0].nodeValue;
