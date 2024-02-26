@@ -15,7 +15,7 @@
     var d3 = xmlDoc.getElementsByTagName("wednesday");
     var d4 = xmlDoc.getElementsByTagName("thursday");
     var d5 = xmlDoc.getElementsByTagName("friday");
-    var y = 1;
+    var y = i+1;
     var i;
     for (let i in d1) {
     document.getElementById("line1").getElementsByClassName("m4")[i].innerHTML = d1[0].childNodes[y].childNodes[1].childNodes[0].nodeValue;
