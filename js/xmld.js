@@ -5,57 +5,39 @@
     }
   };
 
-  xhttp.open("GET", "xml/employees.xml", true);
+  xhttp.open("GET", "xml/guests.xml", true);
   xhttp.send();
-
-  function myFunction3b(xml) {	
+  
+  
+    var x = document.getElementsByClassName("m4")
     var xmlDoc = xml.responseXML;
-    var x1 = xmlDoc.getElementsByTagName("name");
-    var x2 = xmlDoc.getElementsByTagName("position");
-    var x3 = xmlDoc.getElementsByTagName("tel");
-    var x4 = xmlDoc.getElementsByTagName("mail");
-    var w = xmlDoc.getElementsByTagName("wales");
-    document.getElementById("name").innerHTML = x1[0].childNodes[0].nodeValue;
-    document.getElementById("position").innerHTML = x2[0].childNodes[0].nodeValue;
-    document.getElementById("tel").innerHTML = x3[0].childNodes[0].nodeValue;
-    document.getElementById("mail").innerHTML = x4[0].childNodes[0].nodeValue;
-    document.getElementById("phone").innerHTML = w[0].childNodes[0].nodeValue;
+    var d1 = xmlDoc.getElementsByTagName("monday");
+    var d2 = xmlDoc.getElementsByTagName("tuesday");
+    var d3 = xmlDoc.getElementsByTagName("wednesday");
+    var d4 = xmlDoc.getElementsByTagName("thursday");
+    var d5 = xmlDoc.getElementsByTagName("friday");
+    var y = 1;
+    var i;
+
+    function myFunction3a(xml) {
+    for (i = 0; i < x.length; i++) {
+    document.getElementById("line1").getElementsByClassName("m4")[i].innerHTML = d1[0].childNodes[y].childNodes[1].childNodes[0].nodeValue;
+    document.getElementById("line1").getElementsByClassName("m6")[i].innerHTML = d1[0].childNodes[y].childNodes[3].childNodes[0].nodeValue;
+    document.getElementById("line1").getElementsByClassName("m2")[i].innerHTML = d1[0].childNodes[y].childNodes[5].childNodes[0].nodeValue;
+    document.getElementById("line2").getElementsByClassName("m4")[i].innerHTML = d2[0].childNodes[y].childNodes[1].childNodes[0].nodeValue;
+    document.getElementById("line2").getElementsByClassName("m6")[i].innerHTML = d2[0].childNodes[y].childNodes[3].childNodes[0].nodeValue;
+    document.getElementById("line2").getElementsByClassName("m2")[i].innerHTML = d2[0].childNodes[y].childNodes[5].childNodes[0].nodeValue;
+    document.getElementById("line3").getElementsByClassName("m4")[i].innerHTML = d3[0].childNodes[y].childNodes[1].childNodes[0].nodeValue;
+    document.getElementById("line3").getElementsByClassName("m6")[i].innerHTML = d3[0].childNodes[y].childNodes[3].childNodes[0].nodeValue;
+    document.getElementById("line3").getElementsByClassName("m2")[i].innerHTML = d3[0].childNodes[y].childNodes[5].childNodes[0].nodeValue;
+    document.getElementById("line4").getElementsByClassName("m4")[i].innerHTML = d4[0].childNodes[y].childNodes[1].childNodes[0].nodeValue;
+    document.getElementById("line4").getElementsByClassName("m6")[i].innerHTML = d4[0].childNodes[y].childNodes[3].childNodes[0].nodeValue;
+    document.getElementById("line4").getElementsByClassName("m2")[i].innerHTML = d4[0].childNodes[y].childNodes[5].childNodes[0].nodeValue;
+    document.getElementById("line5").getElementsByClassName("m4")[i].innerHTML = d5[0].childNodes[y].childNodes[1].childNodes[0].nodeValue;
+    document.getElementById("line5").getElementsByClassName("m6")[i].innerHTML = d5[0].childNodes[y].childNodes[3].childNodes[0].nodeValue;
+    document.getElementById("line5").getElementsByClassName("m2")[i].innerHTML = d5[0].childNodes[y].childNodes[5].childNodes[0].nodeValue;
+    y = y+2;
   }
-myFunction3b(xml);
-
-// Choose data from XML document.
-function myFunction2(c) {
-
-  var y = document.getElementsByTagName("button");	
-
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        myFunction3(this);
-    }
-  };
-  xhttp.open("GET", "xml/employees.xml", true);
-  xhttp.send();
-	
-  function myFunction3(xml) {
-    var xmlDoc = xml.responseXML;
-    var x1 = xmlDoc.getElementsByTagName("name");
-    var x2 = xmlDoc.getElementsByTagName("position");
-    var x3 = xmlDoc.getElementsByTagName("tel");
-    var x4 = xmlDoc.getElementsByTagName("mail");
-    var w = xmlDoc.getElementsByTagName("wales");
-    for (i = 0; i < y.length; i++) {
-      var z = y[i+1]; // Because I already have one "button" element.
-      if (z.id === c) { 
-    document.getElementById("name").innerHTML = x1[i].childNodes[0].nodeValue;
-    document.getElementById("position").innerHTML = x2[i].childNodes[0].nodeValue;
-    document.getElementById("tel").innerHTML = x3[i].childNodes[0].nodeValue;
-    document.getElementById("mail").innerHTML = x4[i].childNodes[0].nodeValue;
-    if (z.classList.contains("w")) { 
-    document.getElementById("phone").innerHTML = w[0].childNodes[0].nodeValue;
-    } else
-    document.getElementById("phone").innerHTML = "+44 (0) 113 277 0606";
-   } 	
-  }
- }
 }
+
+myFunction3b(xml);
