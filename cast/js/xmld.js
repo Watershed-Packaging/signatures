@@ -15,25 +15,25 @@
     var d3 = xmlDoc.getElementsByTagName("wednesday");
     var d4 = xmlDoc.getElementsByTagName("thursday");
     var d5 = xmlDoc.getElementsByTagName("friday");
-    var y = i+1;
+    var y = 1;
     var i;
-    for (let i in d1) {
+    for (let y in d1) {
     document.getElementById("line1").getElementsByClassName("m4")[i].innerHTML = d1[0].childNodes[y].childNodes[1].childNodes[0].nodeValue;
     document.getElementById("line1").getElementsByClassName("m6")[i].innerHTML = d1[0].childNodes[y].childNodes[3].childNodes[0].nodeValue;
     document.getElementById("line1").getElementsByClassName("m2")[i].innerHTML = d1[0].childNodes[y].childNodes[5].childNodes[0].nodeValue;
-    for (let i in d2) {
+    for (let y in d2) {
     document.getElementById("line2").getElementsByClassName("m4")[i].innerHTML = d2[0].childNodes[y].childNodes[1].childNodes[0].nodeValue;
     document.getElementById("line2").getElementsByClassName("m6")[i].innerHTML = d2[0].childNodes[y].childNodes[3].childNodes[0].nodeValue;
     document.getElementById("line2").getElementsByClassName("m2")[i].innerHTML = d2[0].childNodes[y].childNodes[5].childNodes[0].nodeValue;
-    for (let i in d3) {
+    for (let y in d3) {
     document.getElementById("line3").getElementsByClassName("m4")[i].innerHTML = d3[0].childNodes[y].childNodes[1].childNodes[0].nodeValue;
     document.getElementById("line3").getElementsByClassName("m6")[i].innerHTML = d3[0].childNodes[y].childNodes[3].childNodes[0].nodeValue;
     document.getElementById("line3").getElementsByClassName("m2")[i].innerHTML = d3[0].childNodes[y].childNodes[5].childNodes[0].nodeValue;
-    for (let i in d4) {
+    for (let y in d4) {
     document.getElementById("line4").getElementsByClassName("m4")[i].innerHTML = d4[0].childNodes[y].childNodes[1].childNodes[0].nodeValue;
     document.getElementById("line4").getElementsByClassName("m6")[i].innerHTML = d4[0].childNodes[y].childNodes[3].childNodes[0].nodeValue;
     document.getElementById("line4").getElementsByClassName("m2")[i].innerHTML = d4[0].childNodes[y].childNodes[5].childNodes[0].nodeValue;
-    for (let i in d5) {
+    for (let y in d5) {
     document.getElementById("line5").getElementsByClassName("m4")[i].innerHTML = d5[0].childNodes[y].childNodes[1].childNodes[0].nodeValue;
     document.getElementById("line5").getElementsByClassName("m6")[i].innerHTML = d5[0].childNodes[y].childNodes[3].childNodes[0].nodeValue;
     document.getElementById("line5").getElementsByClassName("m2")[i].innerHTML = d5[0].childNodes[y].childNodes[5].childNodes[0].nodeValue;
