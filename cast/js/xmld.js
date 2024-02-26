@@ -1,3 +1,5 @@
+  var x = document.getElementsByClassName("m4");
+
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -9,7 +11,7 @@
   xhttp.send();
 
     function myFunction3b(xml) {
-    var x = document.getElementsByClassName("m4");
+    
     var xmlDoc = xml.responseXML;
     var d1 = xmlDoc.getElementsByTagName("monday");
     var d2 = xmlDoc.getElementsByTagName("tuesday");
