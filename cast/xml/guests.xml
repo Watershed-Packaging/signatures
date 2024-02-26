@@ -5,15 +5,15 @@
   <monday>
 
     <guest>
-      <name>Witold Krzysztofek</name>
-      <company>Watershed Packaging</company>
-      <time>12:00 pm</time>
+      <name></name>
+      <company></company>
+      <time></time>
     </guest>
 
     <guest>
-      <name>Witold Krzysztofek</name>
-      <company>Watershed Packaging</company>
-      <time>12:00 pm</time>
+      <name></name>
+      <company></company>
+      <time></time>
     </guest>
 
   </monday>
@@ -21,15 +21,15 @@
   <tuesday>
 
     <guest>
-      <name>Witold Krzysztofek</name>
-      <company>Watershed Packaging</company>
-      <time>12:00 pm</time>
+      <name></name>
+      <company></company>
+      <time></time>
     </guest>
 
     <guest>
-      <name>Witold Krzysztofek</name>
-      <company>Watershed Packaging</company>
-      <time>12:00 pm</time>
+      <name></name>
+      <company></company>
+      <time></time>
     </guest>
 
   </tuesday>
@@ -37,7 +37,7 @@
   <wednesday>
 
     <guest>
-      <name>Sabrina Pucci</name>
+      <name>Sabrina Pucci, Giulia</name>
       <company>Irplast</company>
       <time>10:00 am</time>
     </guest>
@@ -53,6 +53,12 @@
   <thursday>
 
     <guest>
+      <name>Kathryn Hanson</name>
+      <company>Avery Dennison</company>
+      <time>1:00 pm</time>
+    </guest>
+
+    <guest>
       <name>Amy Milnthorp, Angelo Schiavetta, Guiseppe Mastrolia</name>
       <company>Symingtons</company>
       <time>1:30 pm</time>
@@ -63,9 +69,9 @@
   <friday>
 
     <guest>
-      <name>Witold Krzysztofek</name>
-      <company>Watershed Packaging</company>
-      <time>12:00 pm</time>
+      <name></name>
+      <company></company>
+      <time></time>
     </guest>
 
   </friday>
