@@ -10,6 +10,8 @@
 
     function myFunction3b(xml) {
     var x = document.getElementsByClassName("m4")
+    var x2 = document.getElementsByClassName("m6")
+    var x3 = document.getElementsByClassName("m2")
     var xmlDoc = xml.responseXML;
     var d1 = xmlDoc.getElementsByTagName("monday");
     var d2 = xmlDoc.getElementsByTagName("tuesday");
@@ -19,7 +21,7 @@
     var y = 1;
     var i;
     for (i = 0; i < x.length; i++) {
-    if (x === null) { continue; }
+    if (x === null || x2 === null || x3 === null) { continue; }
     document.getElementById("line1").getElementsByClassName("m4")[i].innerHTML = d1[0].childNodes[y].childNodes[1].childNodes[0].nodeValue;
     document.getElementById("line1").getElementsByClassName("m6")[i].innerHTML = d1[0].childNodes[y].childNodes[3].childNodes[0].nodeValue;
     document.getElementById("line1").getElementsByClassName("m2")[i].innerHTML = d1[0].childNodes[y].childNodes[5].childNodes[0].nodeValue;
