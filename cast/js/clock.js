@@ -13,3 +13,7 @@ function myTimer() {
   const d = new Date();
   document.getElementById("clock").innerHTML = d.toLocaleTimeString();
 }
+
+setTimeout(function(){
+   location.reload(true);
+}, 43200000);
