@@ -16,4 +16,4 @@ function myTimer() {
 
 setTimeout(function(){
    location.reload(true);
-}, 43200000);
+}, 70000);
