@@ -39,7 +39,7 @@ var d3 = [
 
 /* _______________________GUESTS___________________________________ */
 
-  "10:30 am", "John Inman", "TPL",
+  "00:00 am", "Name2", "Company",
   "00:00 am", "Name2", "Company",
   "00:00 am", "Name3", "Company",
   "00:00 am", "Name4", "Company"
@@ -55,9 +55,9 @@ var d4 = [
 
 /* _______________________GUESTS___________________________________ */
 
-  "10:00 am", "Ade Morton", "ALT",
-  "10:00 am", "Nick Tyrer and Seb Bolingbroke", "MPS",
-  "10:30 am", "Steve Patchett", "Sidaplax",
+  "00:00 am", "Name2", "Company",
+  "00:00 am", "Name2", "Company",
+  "00:00 am", "Name2", "Company",
   "00:00 am", "Name4", "Company"
 
 /* ---------------------------------------------------------------- */
