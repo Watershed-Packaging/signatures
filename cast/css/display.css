@@ -16,6 +16,6 @@
 }
 
 .day3 .l1,
-.day5 .l1, .l2 {
+.day5 .l1, .day5 .l2 {
   display: inline-block;
 }
