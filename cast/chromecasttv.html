@@ -10,23 +10,33 @@
 #msg {
   display: block;
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 450px;
+  bottom: 30px;
+  left: 50px;
+  width: 240px;
+  height: 40px;
   text-align: left;
-  margin: 20px 0;
+  //margin: 20px 0;
   font-size: 25px;
   padding: 10px 20px;
-  background-color: rgba(35, 125, 38, 0.9);
+  background-color: white;
+  //background-color: rgba(35, 125, 38, 0.9);
   color: white;
-  //border-radius: 10px;
+  border-radius: 20px;
   text-shadow: none;
+  box-shadow: 2px 2px 5px grey;
 }
-.msg {
+.msg1 {
   position: absolute;
-  bottom: 10px;
-  left: 390px;
-  rotate: 20deg;
+  bottom: 20px;
+  left: 90px;
+  filter: drop-shadow(0.5px 0.5px 0px black);
+  //rotate: 20deg;
+}
+.msg2 {
+  position: absolute;
+  bottom: 20px;
+  left: -10px;
+  //rotate: 20deg;
 }
 
 </style>
@@ -47,7 +57,8 @@
 
 </div>
 
-<!--<b id="msg">International Women's Day 2024</b><img class="msg" src="img/flowers.png" width="100px" height="100px">-->
+<!-- <b id="msg">International Women's Day 2024</b><img class="msg" src="img/flowers.png" width="100px" height="100px"> -->
+<b id="msg"></b><img class="msg1" src="img/HappyEaster2024.gif" width="auto" height="50px"><img class="msg2" src="img/giphy-1.gif" width="120px" height="auto">
 <b id="date"></b>
 <b id="clock"></b>
 
