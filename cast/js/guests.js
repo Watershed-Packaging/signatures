@@ -24,7 +24,7 @@ var d2 = [
 /* _______________________GUESTS___________________________________ */
 
   "8:30 am", "Kris Flexipacks", "Machine Point",
-  "00:00 am", "Name2", "Company",
+  "1:30 pm", "David Madden", "DPD",
   "00:00 am", "Name3", "Company",
   "00:00 am", "Name4", "Company"
 
