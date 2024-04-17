@@ -15,7 +15,8 @@
   display: none;
 }
 
-.day2 .l1, .day2 .l2
+.day2 .l1, .day2 .l2,
+.day4 .l1
 {
   display: inline-block;
 }
