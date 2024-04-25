@@ -124,6 +124,13 @@
   </employee>
 
   <employee>
+    <name>Liga Snape</name>
+    <position>Accounts</position>
+    <tel></tel>
+    <mail>liga@watershed-packaging.co.uk</mail>
+  </employee>
+
+  <employee>
     <name>Maria Din</name>
     <position>Management Accountant</position>
     <tel>+44 113 272 9582</tel>
