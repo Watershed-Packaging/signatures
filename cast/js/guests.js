@@ -56,7 +56,7 @@ var d4 = [
 /* _______________________GUESTS___________________________________ */
 
   "9:00 am", "Wayne Garvican, Andrew Healey & Ioana Botez", "Symingtons",
-  "TBC", "Anthony & Alan", "3a Electrical Services & NIC EIC",
+  "-:-- --", "Anthony & Alan", "3a Electrical Services & NIC EIC",
   "00:00 am", "Name3", "Company",
   "00:00 am", "Name4", "Company"
 
