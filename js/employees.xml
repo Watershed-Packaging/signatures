@@ -54,13 +54,6 @@
   </employee>
 
   <employee>
-    <name>David Burton</name>
-    <position>Internal Account Executive</position>
-    <tel>+44 113 518 2022</tel>
-    <mail>david@watershed-packaging.co.uk</mail>
-  </employee>
-
-  <employee>
     <name>Dean Wright</name>
     <position>Packaging Manager</position>
     <tel>+44 79 6054 0084</tel>
@@ -72,13 +65,6 @@
     <position>Junior Accountant</position>
     <tel>+44 113 272 9597</tel>
     <mail>edie@watershed-packaging.co.uk</mail>
-  </employee>
-
-  <employee>
-    <name>Evi McNally</name>
-    <position>Internal Account Executive</position>
-    <tel>+44 113 272 9586</tel>
-    <mail>evi@watershed-packaging.co.uk</mail>
   </employee>
 
   <employee>
