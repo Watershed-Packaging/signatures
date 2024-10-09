@@ -1,70 +1,208 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Watershed Cast</title>
-<link rel="stylesheet" href="css/styles.css">
-<link rel="stylesheet" href="css/display.css">
-
+<title>Page Title</title>
+</head>
 <style>
+html, body {
+  //background-image: url("https://raw.githubusercontent.com/Watershed-Packaging/signatures/refs/heads/main/cast/img/info.jpg");
+  //background-size: 1280px;
+  //background-repeat: no-repeat;
+  position: relative;
+  margin: 0;
+  aspect-ratio: 1280/720;
+  width: 100%;
+  height: auto;
+  //width: 1280px;
+  //height: 720px;
+  overflow: hidden;
+}
 
-#msg {
+.container {
+  aspect-ratio: 1280/720;
+  width: 100%;
+  height: auto;
+  background-color: black;
+}
+
+iframe.sky {
+  position: absolute;
+  top: 2.083%;
+  left: 1.171%;
+  aspect-ratio: 705/397;
+  width: 55.078%;
+  height: auto;
+}
+
+.guests > iframe {
+  border: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.guests > iframe::-webkit-scrollbar {
+  display: none;
+}
+
+div.news {
+  position: absolute;
+  top: 2.083%;
+  right: 1.171%;
+  text-align: center;
+  aspect-ratio: 530/397;
+  width: 41.406%;
+  height: auto;
+}
+div.guests {
+  position: absolute;
+  top: 59.305%;
+  left: 1.171%;
+  right: 1.171%;
+  text-align: center;
+  aspect-ratio: 1250/240;
+  width: 97.656%;
+  height: auto;
+  background-image: url("img/goldgradient.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.guests p {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: white;
+  font-size: 30px;
+}
+
+div.tape {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  aspect-ratio: 1280/38;
+  width: 100%;
+  height: auto;
+}
+
+img {
+  display: block;
+}
+
+div.news div {
+  height: 100%;
+}
+
+/* SLIDES */
+.mySlides {display: none; position: relative; overflow: hidden;}
+.news img {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  height: 100%;
+}
+
+.slide {
+  position: relative;
+  animation-name: slide;
+  animation-duration: 10s;
+}
+
+@keyframes slide {
+  0% {right: -300px; opacity: 0.4}
+  10% {right: 0px; opacity: 1}
+  98% {right: 0px; opacity: 1}
+  100% {right: 0px; opacity: 0}
+}
+
+#date {
   display: block;
   position: absolute;
-  bottom: 30px;
-  left: 50px;
-  width: 240px;
-  height: 40px;
-  text-align: left;
-  //margin: 20px 0;
-  font-size: 25px;
-  padding: 10px 20px;
-  background-color: white;
-  //background-color: rgba(35, 125, 38, 0.9);
-  color: white;
-  border-radius: 20px;
+  bottom: 11.15%;
+  left: 3.562%;
+  text-align: center;
+  font-size: 1.953vw;
+  padding: 0.781% 1.562%;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  border-radius: 10px;
   text-shadow: none;
-  box-shadow: 2px 2px 5px grey;
 }
-.msg1 {
+
+#clock {
+  display: block;
   position: absolute;
-  bottom: 20px;
-  left: 90px;
-  filter: drop-shadow(0.5px 0.5px 0px black);
-  //rotate: 20deg;
-}
-.msg2 {
-  position: absolute;
-  bottom: 20px;
-  left: -10px;
-  //rotate: 20deg;
+  bottom: 19.45%;
+  left: 3.562%;
+  text-align: center;
+  font-size: 4.453vw;
+  padding: 0.781% 2.8%;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  border-radius: 10px;
+  text-shadow: none;
 }
 
 </style>
-
-</head>
-
 <body>
 
-<div class="slideshow-container">
+<div class="container">
 
-  <div class="mySlides anime"><iframe src="guests.html"></iframe></div>
-  <div class="mySlides anime"><iframe src="https://www.watershed-packaging.co.uk"></iframe></div>
-  <div class="mySlides anime"><img src="img/photo1.jpg"></div>
-  <div class="mySlides anime"><img src="img/photo2.jpg"></div>
-  <div class="mySlides anime"><img src="img/photo3.jpg"></div>
-  <div class="mySlides anime"><img src="img/photo4.jpg"></div>
-  <div class="mySlides anime"><img src="img/photo5.jpg"></div>
+<iframe class="sky" src="https://www.youtube.com/embed/oJUvTVdTMyY?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+
+<div class="news">
+
+  <div class="mySlides slide">
+  <img src="https://images.squarespace-cdn.com/content/v1/605dbf6f71ca5b51aa996fcb/1616855028192-3YXWTJI3TX4N960HJ79W/Shrink-sleeve-packaging.jpg" style="height:100%">
+</div>
+
+  <div class="mySlides slide">
+    <img src="https://images.squarespace-cdn.com/content/v1/605dbf6f71ca5b51aa996fcb/1616855011721-J5V52GT4U2YAVC7R4JCL/Flexible-packaging.jpg" style="height:100%">
+  </div>
+
+  <div class="mySlides slide">
+    <img src="https://images.squarespace-cdn.com/content/v1/605dbf6f71ca5b51aa996fcb/1616855046914-KZG64TAZPT73K6O2QCX3/Labels.jpg" style="height:100%">
+  </div>
 
 </div>
 
-<!-- <b id="msg">International Women's Day 2024</b><img class="msg" src="img/flowers.png" width="100px" height="100px"> -->
-<!-- <b id="msg"></b><img class="msg1" src="img/HappyEaster2024L.gif" width="auto" height="50px"><img class="msg2" src="img/giphy-1.gif" width="120px" height="auto"> -->
+<div class="guests"><iframe src="guests2.html"></iframe></div>
+
+<div class="tape">
+
+<img src="https://raw.githubusercontent.com/Watershed-Packaging/signatures/refs/heads/main/cast/img/tape2024.gif" width="100%">
+
+</div>
+
+</div>
+
 <b id="date"></b>
 <b id="clock"></b>
 
 </body>
 
 <script src="js/clock.js"></script>
-<script src="js/slides.js"></script>
+<script>
+
+//SLIDES//
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 10000);
+}
+</script>
 
 </html>
