@@ -95,7 +95,7 @@ img {
   max-height: 100%;
 }
 
-.l5 {
+.l5 > div {
   position: relative;
   left: 13%;
   //top: 0.5vw;
