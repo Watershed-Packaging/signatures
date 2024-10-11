@@ -6,15 +6,19 @@
   display: block;
 }
 
-.day1 .l1, .l2, .l3, .l4,
-.day2 .l1, .l2, .l3, .l4,
-.day3 .l1, .l2, .l3, .l4,
-.day4 .l1, .l2, .l3, .l4,
-.day5 .l1, .l2, .l3, .l4
+.day1 .l1, .l2, .l3, .l4, .l5,
+.day2 .l1, .l2, .l3, .l4, .l5,
+.day3 .l1, .l2, .l3, .l4, .l5,
+.day4 .l1, .l2, .l3, .l4, .l5,
+.day5 .l1, .l2, .l3, .l4, .l5
 {
   display: none;
 }
 
-.day1 .l5, .day2 .l5, .day3 .l5, .day4 .l5, .day5 .l5 {
+.day1 .l5,
+.day2 .l5,
+.day3 .l5,
+.day4 .l1,
+.day5 .l5 {
   display: inline-block;
 }
