@@ -2,7 +2,7 @@
   display: none;
 }
 
-.day1, .day2, .day3, .day4, .day5 {
+{
   display: block;
 }
 
@@ -15,7 +15,6 @@
   display: none;
 }
 
-
-{
+.day1 .l5, .day2 .l5, .day3 .l5, .day4 .l5, .day5 .l5 {
   display: inline-block;
 }
