@@ -149,8 +149,44 @@ div.news div {
   text-shadow: none;
 }
 
+.ncr {
+  display: none;
+  position: absolute;
+  right: 3.5%;
+  bottom: 8%;
+  z-index: 1;
+}
+
+.ncr p {
+  width: 100%;
+  margin: 0;
+  padding: 1% 2%;
+  font-size: 1.9vw;
+  color: white;
+  background-color: red;
+  text-shadow: none;
+  font-weight: bold;
+  //text-transform: uppercase;
+  letter-spacing: 0.1vw;
+  word-spacing: 0.3vw;
+  border: 2px solid white;
+  animation-name: blink;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  0% {background-color: rgba(0,0,0,1);}
+  25% {background-color: rgba(0,0,0,1);}
+  50% {background-color: rgba(255,0,0,0.5); transform: scale(1.05);}
+  75% {background-color: rgba(0,0,0,1);}
+  100% {background-color: rgba(0,0,0,1);}
+}
+
 </style>
 <body>
+
+<div class="ncr"><p>NCR meeting today at 1:30pm</p></div>
 
 <div class="container">
 
@@ -230,6 +266,19 @@ div.news div {
 </body>
 
 <script src="js/clock.js"></script>
+
+<script>
+//CHECK WHAT DAY IS IT
+
+const d2 = new Date();
+let day2 = d2.getDay();
+
+switch (day2) {
+  case 4:
+    document.getElementsByClassName("ncr")[0].style.display = "block";
+}
+</script>
+
 <script>
 
 //SLIDES//
