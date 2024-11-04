@@ -17,8 +17,8 @@
 
 .day1 .l5,
 .day2 .l1, .day2 .l2,
-.day3 .l5,
-.day4 .l1,
+.day3 .l1,
+.day4 .l1, .day4 .l2,
 .day5 .l5 {
   display: inline-block;
 }
