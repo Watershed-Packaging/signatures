@@ -39,7 +39,7 @@ var d3 = [
 
 /* _______________________GUESTS___________________________________ */
 
-  "8:00 am", "Alex Bowers", "Network International Cargo",
+  "12:00 pm", "Alex Bowers", "Network International Cargo",
   "00:00 am", "Name2", "Company",
   "00:00 am", "Name3", "Company",
   "00:00 am", "Name4", "Company"
