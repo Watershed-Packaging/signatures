@@ -18,13 +18,13 @@ var d1 = [
 var d2 = [
 /* -----------------------TUESDAY---------------------------------- */
 
-                       "(05.11.2024)",
+                       "(19.11.2024)",
 /*                    _______________                               */
 
 /* _______________________GUESTS___________________________________ */
 
-  "10:00 am", "Seb Bolingbroke", "MPS",
-  "11:00 am", "Lars Vierkotten & Damion Berry", "Huhtamaki",
+  "9:30 am", "Gordon Lynford", "PIB",
+  "00:00 am", "Name2", "Company",
   "00:00 am", "Name3", "Company",
   "00:00 am", "Name4", "Company"
 
