@@ -34,12 +34,12 @@ var d2 = [
 var d3 = [
 /* -----------------------WEDNESDAY-------------------------------- */
 
-                       "(06.11.2024)",
+                       "(20.11.2024)",
 /*                    _______________                               */
 
 /* _______________________GUESTS___________________________________ */
 
-  "12:00 pm", "Alex Bowers", "Network International Cargo",
+  "11:00 am", "John and Chris", "BFS Pressroom",
   "00:00 am", "Name2", "Company",
   "00:00 am", "Name3", "Company",
   "00:00 am", "Name4", "Company"
