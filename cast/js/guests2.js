@@ -50,13 +50,13 @@ var d3 = [
 var d4 = [
 /* -----------------------THURSDAY--------------------------------- */
 
-                       "(07.11.2024)",
+                       "(21.11.2024)",
 /*                    _______________                               */
 
 /* _______________________GUESTS___________________________________ */
 
-  "8:00 am", "IST Engineer", "",
-  "1:00 pm", "Ryan Jinks & Stephen Harpham", "Accrued Plastics",
+  "10:00 am", "Simon Watson", "Watsons Bakery",
+  "00:00 am", "Name2", "Company",
   "00:00 am", "Name3", "Company",
   "00:00 am", "Name4", "Company"
 
