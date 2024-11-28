@@ -71,7 +71,7 @@ var d5 = [
 
 /* _______________________GUESTS___________________________________ */
 
-  "00:00 am", "Name1", "Company",
+  "8:00 am", "Ken Reece", "Mauser",
   "00:00 am", "Name2", "Company",
   "00:00 am", "Name3", "Company",
   "00:00 am", "Name4", "Company"
