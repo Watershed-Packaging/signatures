@@ -23,8 +23,8 @@ var d2 = [
 
 /* _______________________GUESTS___________________________________ */
 
+  "10:00 am", "Damion Berry & Michael Angeli", "Huhtamaki",
   "1:30 pm", "John Inman", "TPL",
-  "00:00 am", "Name2", "Company",
   "00:00 am", "Name3", "Company",
   "00:00 am", "Name4", "Company"
 
