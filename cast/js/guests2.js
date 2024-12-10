@@ -25,7 +25,7 @@ var d2 = [
 
   "10:00 am", "Damion Berry & Michael Angeli", "Huhtamaki",
   "1:30 pm", "John Inman", "TPL",
-  "00:00 am", "Name3", "Company",
+  "2:30 pm", "Amy Milnthorp", "Pure Pet Foods",
   "00:00 am", "Name4", "Company"
 
 /* ---------------------------------------------------------------- */
