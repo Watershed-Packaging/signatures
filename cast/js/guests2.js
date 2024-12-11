@@ -39,7 +39,7 @@ var d3 = [
 
 /* _______________________GUESTS___________________________________ */
 
-  "All day", "Robert Herridge", "QAI",
+  "All day", "Robert Herridge", "QAI / Amtivo",
   "00:00 am", "Name2", "Company",
   "00:00 am", "Name3", "Company",
   "00:00 am", "Name4", "Company"
@@ -55,7 +55,7 @@ var d4 = [
 
 /* _______________________GUESTS___________________________________ */
 
-  "All day", "Robert Herridge", "QAI",
+  "All day", "Robert Herridge", "QAI / Amtivo",
   "10:00 am", "David Brooksbank", "Zeller",
   "00:00 am", "Name3", "Company",
   "00:00 am", "Name4", "Company"
