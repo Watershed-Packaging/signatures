@@ -50,13 +50,13 @@ var d3 = [
 var d4 = [
 /* -----------------------THURSDAY--------------------------------- */
 
-                       "(12.12.2024)",
+                       "(09.01.2025)",
 /*                    _______________                               */
 
 /* _______________________GUESTS___________________________________ */
 
-  "All day", "Robert Herridge", "QAI / Amtivo",
-  "10:00 am", "David Brooksbank", "Zeller",
+  "9:30 am", "Gordon Linford", "PIB",
+  "00:00 am", "Name2", "Company",
   "00:00 am", "Name3", "Company",
   "00:00 am", "Name4", "Company"
 
