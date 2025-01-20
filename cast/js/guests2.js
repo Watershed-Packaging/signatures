@@ -10,7 +10,8 @@ var d1 = [
   "00:00 am", "Name1", "Company",
   "00:00 am", "Name2", "Company",
   "00:00 am", "Name3", "Company",
-  "00:00 am", "Name4", "Company"
+  "00:00 am", "Name4", "Company",
+  "9:00 am - 10.FEB.2025", "", "Flexifilms and Artsan"
 
 /* ---------------------------------------------------------------- */
 ];
