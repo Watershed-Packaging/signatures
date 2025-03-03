@@ -61,13 +61,6 @@
   </employee>
 
   <employee>
-    <name>Edie Laurent</name>
-    <position>Junior Accountant</position>
-    <tel>+44 113 272 9597</tel>
-    <mail>edie@watershed-packaging.co.uk</mail>
-  </employee>
-
-  <employee>
     <name>Hannah Rosendale</name>
     <position>Production Planner</position>
     <tel>+44 113 272 9581</tel>
@@ -180,13 +173,6 @@
   </employee>
 
   <employee>
-    <name>Rachel Whiteside</name>
-    <position>Watershed Packaging Ltd</position>
-    <tel>+44 73 5490 4249 / +44 113 277 0606</tel>
-    <mail>rachel@watershed-packaging.co.uk</mail>
-  </employee>
-
-  <employee>
     <name>Rebecca Willis</name>
     <position>Internal Account Executive</position>
     <tel>+44 113 272 9585</tel>
@@ -198,13 +184,6 @@
     <position>Quality Manager</position>
     <tel>+44 113 272 9594</tel>
     <mail>sophie@watershed-packaging.co.uk</mail>
-  </employee>
-
-  <employee>
-    <name>Steven Bains</name>
-    <position>Accounts</position>
-    <tel>+44 113 272 9584</tel>
-    <mail>steven@watershed-packaging.co.uk</mail>
   </employee>
 
   <employee>
