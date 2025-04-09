@@ -187,6 +187,13 @@
   </employee>
 
   <employee>
+    <name>Richard Brook</name>
+    <position>Warehouse</position>
+    <tel>+44 113 518 2023</tel>
+    <mail>richardbrook@watershed-packaging.co.uk</mail>
+  </employee>
+
+  <employee>
     <name>Sophie Bullen-Brown</name>
     <position>Quality Manager</position>
     <tel>+44 113 272 9594</tel>
