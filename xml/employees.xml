@@ -215,6 +215,13 @@
   </employee>
 
   <employee>
+    <name>Valentyn Horban</name>
+    <position>Accounts</position>
+    <tel>+44 113 272 9597</tel>
+    <mail>valentyn@watershed-packaging.co.uk</mail>
+  </employee>
+
+  <employee>
     <name>Warehouse</name>
     <position>Watershed Packaging Ltd</position>
     <tel>+44 113 518 2023</tel>
