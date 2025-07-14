@@ -194,6 +194,13 @@
   </employee>
 
   <employee>
+    <name>Sebastian Azorin</name>
+    <position>Business Development Manager</position>
+    <tel>+34 600 728 291</tel>
+    <mail>sebastian@watershed-packaging.es</mail>
+  </employee>
+  
+  <employee>
     <name>Sophie Bullen-Brown</name>
     <position>Quality Manager</position>
     <tel>+44 113 272 9594</tel>
