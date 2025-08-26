@@ -61,6 +61,13 @@
   </employee>
 
   <employee>
+    <name>Harini Rao</name>
+    <position>Accounts Officer</position>
+    <tel>+44 113 272 9584</tel>
+    <mail>harinirao@watershed-packaging.co.uk</mail>
+  </employee>
+
+  <employee>
     <name>Hannah Rosendale</name>
     <position>Production Planner</position>
     <tel>+44 113 272 9581</tel>
