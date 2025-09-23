@@ -19,7 +19,7 @@
     document.getElementById("position").innerHTML = x2[0].childNodes[0].nodeValue;
     document.getElementById("tel").innerHTML = x3[0].childNodes[0].nodeValue;
     document.getElementById("mail").innerHTML = x4[0].childNodes[0].nodeValue;
-    document.getElementById("phone").innerHTML = w[0].childNodes[0].nodeValue;
+    // document.getElementById("phone").innerHTML = w[0].childNodes[0].nodeValue;
   }
 myFunction3b(xml);
 
