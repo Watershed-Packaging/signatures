@@ -53,6 +53,9 @@ function myFunction2(c) {
     document.getElementById("mail").innerHTML = x4[i].childNodes[0].nodeValue;
     if (z.classList.contains("w")) { 
     document.getElementById("phone").innerHTML = w[0].childNodes[0].nodeValue;
+	} 
+	if (z.classList.contains("s")) { 
+    document.getElementById("phone").innerHTML = s[0].childNodes[0].nodeValue;
     } else
     document.getElementById("phone").innerHTML = "+44 (0) 113 277 0606";
    } 	
