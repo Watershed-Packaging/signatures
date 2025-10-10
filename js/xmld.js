@@ -15,6 +15,7 @@
     var x3 = xmlDoc.getElementsByTagName("tel");
     var x4 = xmlDoc.getElementsByTagName("mail");
     var w = xmlDoc.getElementsByTagName("wales");
+	var s = xmlDoc.getElementsByTagName("spain");
     document.getElementById("name").innerHTML = x1[0].childNodes[0].nodeValue;
     document.getElementById("position").innerHTML = x2[0].childNodes[0].nodeValue;
     document.getElementById("tel").innerHTML = x3[0].childNodes[0].nodeValue;
@@ -44,6 +45,7 @@ function myFunction2(c) {
     var x3 = xmlDoc.getElementsByTagName("tel");
     var x4 = xmlDoc.getElementsByTagName("mail");
     var w = xmlDoc.getElementsByTagName("wales");
+	var s = xmlDoc.getElementsByTagName("spain");
     for (i = 0; i < y.length; i++) {
       var z = y[i+1]; // Because I already have one "button" element.
       if (z.id === c) { 
