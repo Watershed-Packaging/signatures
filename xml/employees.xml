@@ -7,6 +7,13 @@
   <spain>Edificio Galia, Avenida Eduardo Dato 69, 5º piso, CP 41005, Sevilla, España</spain>
 
   <employee>
+    <name>Adam Nutton</name>
+    <position>Finishing Performance Manager</position>
+    <tel>+44 (0) 113 277 0606</tel>
+    <mail>adamnutton@watershed-packaging.co.uk</mail>
+  </employee>
+
+  <employee>
     <name>Amy</name>
     <position>Watershed Packaging Ltd</position>
     <tel>+44 113 277 0606</tel>
@@ -126,13 +133,6 @@
   </employee>
 
   <employee>
-    <name>Maria Din</name>
-    <position>Management Accountant</position>
-    <tel>+44 113 272 9582</tel>
-    <mail>mariadin@watershed-packaging.co.uk</mail>
-  </employee>
-
-  <employee>
     <name>Mark Falkinder</name>
     <position>Lead Engineer</position>
     <tel>+44 77 9219 0003</tel>
@@ -140,15 +140,8 @@
   </employee>
 
   <employee>
-    <name>Martin Johnson</name>
-    <position>Technical Manager</position>
-    <tel>+44 73 9613 1112</tel>
-    <mail>martinjohnson@watershed-packaging.co.uk</mail>
-  </employee>
-
-  <employee>
     <name>Michael Warden</name>
-    <position>Print Production Manager</position>
+    <position>Production Manager</position>
     <tel>+44 77 4650 9879</tel>
     <mail>michaelwarden@watershed-packaging.co.uk</mail>
   </employee>
@@ -172,13 +165,6 @@
     <position>Engineer</position>
     <tel>+44 75 4630 6989</tel>
     <mail>olu@watershed-packaging.co.uk</mail>
-  </employee>
-
-  <employee>
-    <name>Paul High</name>
-    <position>General Manager</position>
-    <tel>+44 79 1766 4759 / +44 113 272 9589</tel>
-    <mail>paulhigh@watershed-packaging.co.uk</mail>
   </employee>
 
   <employee>
