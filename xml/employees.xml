@@ -93,6 +93,13 @@
   </employee>
 
   <employee>
+    <name>Jennifer Timbol</name>
+    <position>Accounts Officer</position>
+    <tel>+44 113 272 9586</tel>
+    <mail>jennifer.timbol@watershed-packaging.co.uk</mail>
+  </employee>
+
+  <employee>
     <name>John Waters</name>
     <position>Managing Director</position>
     <tel>+44 78 8073 3504</tel>
