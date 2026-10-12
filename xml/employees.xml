@@ -65,13 +65,6 @@
   </employee>
 
   <employee>
-    <name>Dave Ward</name>
-    <position>Warehouse Manager</position>
-    <tel>+44 77 0345 9754</tel>
-    <mail>daveward@watershed-packaging.co.uk</mail>
-  </employee>
-
-  <employee>
     <name>Dean Wright</name>
     <position>Packaging Manager</position>
     <tel>+44 79 6054 0084</tel>
@@ -188,13 +181,6 @@
     <position>Internal Account Executive</position>
     <tel>+44 113 272 9585</tel>
     <mail>rebeccawillis@watershed-packaging.co.uk</mail>
-  </employee>
-
-  <employee>
-    <name>Richard Brook</name>
-    <position>Warehouse</position>
-    <tel>+44 113 518 2023</tel>
-    <mail>richardbrook@watershed-packaging.co.uk</mail>
   </employee>
 
   <employee>
