@@ -210,6 +210,13 @@
     <tel>+34 600 728 291</tel>
     <mail>sebastian@watershed-packaging.es</mail>
   </employee>
+
+  <employee>
+    <name>Sophie Bickerdyke</name>
+    <position>Production Planner</position>
+    <tel>+44 113 272 9589</tel>
+    <mail>sophiebickerdyke@watershed-packaging.co.uk</mail>
+  </employee>
   
   <employee>
     <name>Sophie Bullen-Brown</name>
